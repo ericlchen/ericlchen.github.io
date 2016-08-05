@@ -71,6 +71,12 @@ p {
 	margin-top: 100px;
 }
 
+@media screen and (max-width: 720px) {
+    .myName {
+        margin-top: 60px;
+    }
+}
+
 .mainContent {
 	margin-top: 25px;
 }
@@ -78,7 +84,7 @@ p {
 
 /*emoji section*/
 .emojis {
-	margin-top: 25px;
+	margin-top: 10px;
 }
 
 .icon {
@@ -347,6 +353,12 @@ a.mainButton {
     left:0;
     text-align: center;
     width: 100vw;
+}
+
+@media screen and (max-width: 720px) {
+    .bottomRow {
+        bottom: 15px;
+    }
 }
 
 .bottomRow a {
