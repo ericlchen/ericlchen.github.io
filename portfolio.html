@@ -89,9 +89,8 @@
 
 		</div>
 
-		<div class="row cardRow">
+		<div class="row cardRow" id="cardRow2">
 			
-			<div class="wrapper">
 				<div class="card col-sm-12 col-xs-12">
 					<a href="https://www.dropbox.com/s/amijqbdbxj7xt2p/RFD%20Deck.pdf?dl=0" target="_blank"><div class="thumbImg img-responsive" id="thumbImg4"></div></a>
 					<h3 class="text title"> Project Redesign <br><span class="date"> 2016</span></h3>
@@ -112,7 +111,6 @@
 					<p class="text description">Started a Medium blog with my thoughts on life and design. Articles featured in two publications. <span style="font-weight: 600;">Caution: profanity.</span></p>
 					<a href="https://medium.com/@ericlchen" target="_blank" class="button" style="text-decoration: none;"><div class="gButton">SEE MORE</div></a>
 				</div>
-			</div>
 
 		</div>
 
@@ -134,7 +132,7 @@
         $("a.transition").click(function(event){
 	        event.preventDefault();
 	        linkLocation = this.href;
-	        $(".container").fadeOut(650, redirectPage);      
+	        $(".container").fadeOut(400, redirectPage);      
 	    });
 	         
 	    function redirectPage() {

@@ -58,7 +58,7 @@
 	<div class="container">
 		<div class="row myName">
 			<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 text-center">
-				<img class="img-responsive img-circle" src="img/headshot.jpg" style="height:200px; width:200px; margin: 0 auto;">
+				<img id="headshot" class="img-responsive img-circle" src="img/headshot.jpg" style="height:200px; width:200px; margin: 0 auto;">
 				<h1>i'm eric</h1>
 			</div>
 		</div>
@@ -76,11 +76,11 @@
 
 		<div class="row mainContent">
 			<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 text-center">
-				<p>student. designer. product guy. coffee guy.</p>
+				<p id="bio">student. designer. product guy. coffee guy.</p>
 			</div>
 		</div>
 
-		<a class="transition hidden-lg hidden-md button" href="portfolio" style="text-decoration: none;"><div class="gButton mainButton">SEE MY WORK</div></a>
+		<a class="transition button" id="cta" href="portfolio" style="text-decoration: none;"><div class="gButton mainButton">SEE MY WORK</div></a>
 
 		<div class="row bottomRow">
 				<a href="https://ca.linkedin.com/in/ericlchen" target="_blank"><i class="fa fa-linkedin"></i></a>
@@ -103,7 +103,7 @@
         $("a.transition").click(function(event){
 	        event.preventDefault();
 	        linkLocation = this.href;
-	        $(".container").fadeOut(650, redirectPage);      
+	        $(".container").fadeOut(400, redirectPage);      
 	    });
 	         
 	    function redirectPage() {

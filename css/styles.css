@@ -6,7 +6,7 @@ body {
 
 /*fade transition*/
 .container {
-    animation: myfadeInAnimation 0.65s;
+    animation: myfadeInAnimation 0.4s;
 }
 
 @keyframe myfadeInAnimation {
@@ -32,7 +32,15 @@ p {
 	font-size: 1em;
 }
 
+#headshot {
+    box-shadow: 0px 0px 10px #95A5A6;
+}
 
+@media screen and (min-width: 720px) {
+    #bio {
+        font-size: 1.2em;
+    }
+}
 /*nav css*/
 .miniNav {
 	width: 10%;
@@ -47,7 +55,7 @@ p {
 }
 
 .nav-pills>li>a {
-	color: #BDC3C7;
+	color: #B0BEC1;
 }
 
 .nav-pills>li>a:hover, .nav-pills>li>a:focus {
@@ -208,7 +216,7 @@ portfolio
     height: 500px;
     margin-left: 1.5%;
     margin-right: 1.5%;
-    box-shadow: 0px 0px 20px #95A5A6;
+    box-shadow: 0px 0px 10px #95A5A6;
 }
 
 @media screen and (max-width: 720px) {
@@ -237,6 +245,12 @@ portfolio
     }
 }
 
+@media (max-width: 1199px) and (min-width: 992px) {
+    #cardRow2 > .card {
+        height: 550px;
+    }
+}
+
 
 .thumbImg {
     width: 200px;
@@ -253,19 +267,19 @@ portfolio
 }
 
 #thumbImg1 {
-    background-image: url('../img/serenetide.png');
+    background-image: url('../img/serenetide.jpg');
 }
 
 #thumbImg2 {
-    background-image: url('../img/vuru.png')
+    background-image: url('../img/vuru.jpg')
 }
 
 #thumbImg3 {
-    background-image: url('../img/bluprnt.png');
+    background-image: url('../img/bluprnt.jpg');
 }
 
 #thumbImg4 {
-    background-image: url('../img/wireframe.png');
+    background-image: url('../img/wireframe.jpg');
 }
 
 #thumbImg5 {
@@ -298,6 +312,7 @@ portfolio
 }
 
 .gButton {
+    font-family: 'Open Sans', sans-serif;
     font-weight: 700;
     margin: 0 auto;
     width: 70%;
@@ -318,6 +333,13 @@ portfolio
 .button {
     display: flex;
     justify-content: center;
+}
+
+@media screen and (min-width: 720px) {
+    #cta {
+        width: 30%;
+        margin: 0 auto;
+    }
 }
 
 .gButton:hover {
@@ -363,7 +385,7 @@ a.mainButton {
 
 .bottomRow a {
     font-size: 25px;
-    color: #BDC3C7;
+    color: #B0BEC1;
     margin-left: 10px;
     margin-right: 10px;
 }
