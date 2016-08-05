@@ -383,7 +383,18 @@ a.mainButton {
 
 @media screen and (max-width: 720px) {
     .bottomRow {
-        bottom: 5px;
+        bottom: 10px;
+    }
+}
+
+@media screen and (max-width: 568px) {
+    .bottomRow {
+        position: relative;
+        top: 20px;
+        margin: 0 auto;
+        border: 1px solid #000;
+        width: 50%;
+        overflow: hidden;
     }
 }
 
