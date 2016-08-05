@@ -1,0 +1,367 @@
+body {
+	font-family: 'Varela Round', 'Open Sans', sans-serif;
+	background-color: #D9ECF0;
+    padding-bottom: 40px;
+}
+
+/*fade transition*/
+.container {
+    animation: myfadeInAnimation 0.65s;
+}
+
+@keyframe myfadeInAnimation {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+@-webkit-keyframes myfadeInAnimation {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+
+h1 {
+	font-size: 60px;
+}
+
+@media screen and (max-width: 720px) {
+    h1 {
+        font-size: 45px;
+    }
+}
+
+p {
+	font-size: 1em;
+}
+
+
+/*nav css*/
+.miniNav {
+	width: 10%;
+	position: fixed;
+	bottom: 50px;
+	left: 50px;
+}
+
+.nav-pills>li.active>a, .nav-pills>li.active>a:focus, .nav-pills>li.active>a:hover {
+	color: #E74C3C;
+	background: none;
+}
+
+.nav-pills>li>a {
+	color: #BDC3C7;
+}
+
+.nav-pills>li>a:hover, .nav-pills>li>a:focus {
+	background: none;
+	color: #E87266;
+    -webkit-transition: color .3s ease-in-out;
+    -moz-transition: color .3s ease-in-out;
+    -o-transition: color .3s ease-in-out;
+    transition: color .3s ease-in-out;
+}
+
+/*.fullWidth {
+	text-align: center;
+	margin: 0 auto;
+	color: #222;
+	width: 100%;
+	display: inline-block;	
+}*/
+
+.myName {
+	margin-top: 100px;
+}
+
+.mainContent {
+	margin-top: 25px;
+}
+
+
+/*emoji section*/
+.emojis {
+	margin-top: 25px;
+}
+
+.icon {
+	margin: 0 25px;
+	font-size: 1.25em;
+}
+
+
+
+
+/*mobile nav css*/
+/* The Overlay (background) */
+.overlay {
+    /* Height & width depends on how you want to reveal the overlay */    
+    height: 100%;
+    width: 0%;
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    background-color: #E74C3C; /* fallback color */
+    background-color: rgba(231,76,60, 0.95); /* w/opacity */
+    overflow-x: hidden; /* Disable horizontal scroll */
+    transition: 0.3s; /* 0.5 second transition effect to slide in or slide down the overlay (height or width, depending on reveal) */
+}
+
+/* Position the content inside the overlay */
+.overlay-content {
+    position: relative;
+    top: 25%; /* 25% from the top */
+    width: 100%; /* 100% width */
+    text-align: center; /* Centered text/links */
+    margin-top: 30px; /* 30px top margin to avoid conflict with the close button on smaller screens */
+}
+
+/* The navigation links inside the overlay */
+.overlay a {
+    padding: 8px;
+    text-decoration: none;
+    font-size: 20px;
+    color: #fff;
+    display: block; /* Display block instead of inline */
+    transition: 0.3s; /* Transition effects on hover (color) */
+}
+
+/* When you mouse over the navigation links, change their color */
+.overlay a:hover, .overlay a:focus {
+    color: #f1f1f1;
+}
+
+/* Position the close button (top right corner) */
+.closebtn {
+    position: absolute;
+    top: 20px;
+    right: 45px;
+    font-size: 40px !important; /* Override the font-size specified earlier (36px) for all navigation links */
+}
+
+/* When the height of the screen is less than 450 pixels, change the font-size of the links and position the close button again, so they don't overlap */
+@media screen and (max-height: 450px) {
+    .overlay a {font-size: 20px}
+    .closebtn {
+        font-size: 40px !important;
+        top: 15px;
+        right: 35px;
+    }
+}
+
+#menuButton {
+	position: fixed;
+	top: 25px;
+	left: 25px;
+    z-index: 1000;
+}
+
+.bar1 {
+	width: 30px;
+	background-color: #E74C3C;
+	height: 5px;
+	border-radius: 4px;
+	margin-bottom: 5px;
+}
+
+.bar2 {
+	width: 23px;
+	background-color: #E74C3C;
+	height: 5px;
+	border-radius: 4px;
+	margin-bottom: 5px;
+}
+
+
+/*------------------------------
+portfolio
+------------------------------*/
+.cardRow {
+    margin: 0 auto;
+    /*border: 1px solid #000;*/
+    width: 75%;
+    height: auto;
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+
+@media screen and (max-width: 991px) {
+    .container {
+        width: 100%;
+    }
+    .cardRow {
+        width: 100%;
+    }
+}
+
+.card {
+    font-family: 'Open Sans', sans-serif;
+    background-color: #fff;
+    border-radius: 4px;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    width: 30%;
+    height: 500px;
+    margin-left: 1.5%;
+    margin-right: 1.5%;
+    box-shadow: 0px 0px 20px #95A5A6;
+}
+
+@media screen and (max-width: 720px) {
+    .card {
+        width: 100%;
+        margin: 0 auto;
+        margin-bottom: 25px;
+        height: auto !important;
+    }
+
+    .cardRow {
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .card {
+        margin-bottom: 25px;
+        height: 550px;
+    }
+
+    .cardRow {
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+}
+
+
+.thumbImg {
+    width: 200px;
+    height: 200px;
+    margin: 0 auto;
+    border-radius: 4px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    -webkit-transition: all .3s ease-in-out;
+    -moz-transition: all .3s ease-in-out;
+    -o-transition: all .3s ease-in-out;
+    transition: all .3s ease-in-out;
+}
+
+#thumbImg1 {
+    background-image: url('../img/serenetide.png');
+}
+
+#thumbImg2 {
+    background-image: url('../img/vuru.png')
+}
+
+#thumbImg3 {
+    background-image: url('../img/bluprnt.png');
+}
+
+#thumbImg4 {
+    background-image: url('../img/wireframe.png');
+}
+
+#thumbImg5 {
+    background-image: url('../img/expo2015.jpg');
+}
+
+#thumbImg6 {
+    background-image: url('../img/blog.jpg');
+}
+
+.thumbImg:hover {
+    opacity: 0.8;
+}
+
+.text {
+    margin-left: 5%;
+    
+}
+
+.title {
+    font-weight: 600;
+    
+}
+
+.date {
+    opacity: 0.7;
+    font-size: 10px;
+    font-family: 'Open Sans', sans-serif;
+    display: inline-block;
+}
+
+.gButton {
+    font-weight: 700;
+    margin: 0 auto;
+    width: 70%;
+    padding: 10px 10px;
+    margin-top: 25px;
+    border: 1px solid #007AFF;
+    background-color: none;
+    border-radius: 4px;
+    text-align: center;
+    color: #007AFF;
+    -webkit-transition: all .3s ease-in-out;
+    -moz-transition: all .3s ease-in-out;
+    -o-transition: all .3s ease-in-out;
+    transition: all .3s ease-in-out;
+    display: inline-block;
+}
+
+.button {
+    display: flex;
+    justify-content: center;
+}
+
+.gButton:hover {
+    background-color: #007AFF;
+    color:#fff;
+    text-decoration: none;
+}
+
+.mainButton {
+    color: #E74C3C;
+    border-color: #E74C3C;
+    display: inline-block;
+}
+
+a.mainButton {
+    margin: 0 auto;
+}
+
+.mainButton:hover {
+    background-color: #E74C3C;
+    color:#fff;
+    text-decoration: none;
+}
+
+
+/*---------------------------*/
+/*bottom row*/
+/*---------------------------*/
+.bottomRow {
+    margin: 0 auto;
+    position: fixed;
+    bottom: 40px;
+    left:0;
+    text-align: center;
+    width: 100vw;
+}
+
+.bottomRow a {
+    font-size: 25px;
+    color: #BDC3C7;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.bottomRow a:hover {
+    color: #E74C3C;
+    -webkit-transition: all .3s ease-in-out;
+    -moz-transition: all .3s ease-in-out;
+    -o-transition: all .3s ease-in-out;
+    transition: all .3s ease-in-out;
+}
+
+
