@@ -392,7 +392,6 @@ a.mainButton {
         position: relative;
         top: 20px;
         margin: 0 auto;
-        border: 1px solid #000;
         width: 50%;
         overflow: hidden;
     }
