@@ -374,7 +374,7 @@ a.mainButton {
 /*---------------------------*/
 .bottomRow {
     margin: 0 auto;
-    position: absolute;
+    position: fixed;
     bottom: 40px;
     left:0;
     text-align: center;
@@ -383,7 +383,7 @@ a.mainButton {
 
 @media screen and (max-width: 720px) {
     .bottomRow {
-        bottom: 15px;
+        bottom: 5px;
     }
 }
 
