@@ -55,7 +55,7 @@ p {
 }
 
 .nav-pills>li>a {
-	color: #B0BEC1;
+	color: #3B3F40;
 }
 
 .nav-pills>li>a:hover, .nav-pills>li>a:focus {
@@ -216,7 +216,7 @@ portfolio
     height: 500px;
     margin-left: 1.5%;
     margin-right: 1.5%;
-    box-shadow: 0px 0px 10px #95A5A6;
+    box-shadow: 0px 0px 7.5px #95A5A6;
 }
 
 @media screen and (max-width: 720px) {
