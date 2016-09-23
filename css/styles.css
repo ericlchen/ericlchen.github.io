@@ -217,6 +217,8 @@ portfolio
     margin-left: 1.5%;
     margin-right: 1.5%;
     box-shadow: 0px 0px 7.5px #95A5A6;
+    /*box-shadow: 1px 1px 8px 2px rgba(229,223,236,0.3);*/
+    /*border: 1px solid #e0e0e0;*/
 }
 
 @media screen and (max-width: 720px) {
@@ -267,27 +269,27 @@ portfolio
 }
 
 #thumbImg1 {
-    background-image: url('../img/serenetide.jpg');
+    background-image: url('../img/projectdesign5.jpg');
 }
 
 #thumbImg2 {
-    background-image: url('../img/vuru.jpg')
+    background-image: url('../img/serenetide.jpg')
 }
 
 #thumbImg3 {
-    background-image: url('../img/bluprnt.jpg');
+    background-image: url('../img/vuru.jpg');
 }
 
 #thumbImg4 {
-    background-image: url('../img/wireframe.jpg');
+    background-image: url('../img/bluprnt.jpg');
 }
 
 #thumbImg5 {
-    background-image: url('../img/expo2015.jpg');
+    background-image: url('../img/wireframe.jpg');
 }
 
 #thumbImg6 {
-    background-image: url('../img/blog.jpg');
+    background-image: url('../img/expo2015.jpg');
 }
 
 .thumbImg:hover {
