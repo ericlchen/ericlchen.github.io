@@ -269,26 +269,34 @@ portfolio
 }
 
 #thumbImg1 {
-    background-image: url('../img/projectdesign5.jpg');
+    background-image: url('../img/konrad.png');
 }
 
 #thumbImg2 {
-    background-image: url('../img/serenetide.jpg')
+    background-image: url('../img/houseparty.jpg')
 }
 
 #thumbImg3 {
-    background-image: url('../img/vuru.jpg');
+    background-image: url('../img/projectdesign5.jpg');
 }
 
 #thumbImg4 {
-    background-image: url('../img/bluprnt.jpg');
+    background-image: url('../img/serenetide.jpg');
 }
 
 #thumbImg5 {
-    background-image: url('../img/wireframe.jpg');
+    background-image: url('../img/vuru.jpg');
 }
 
 #thumbImg6 {
+    background-image: url('../img/bluprnt.jpg');
+}
+
+#thumbImg7 {
+    background-image: url('../img/wireframe.jpg');
+}
+
+#thumbImg8 {
     background-image: url('../img/expo2015.jpg');
 }
 
