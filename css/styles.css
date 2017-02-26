@@ -37,8 +37,9 @@ p {
 }
 
 @media screen and (min-width: 720px) {
-    #bio {
+    .bio {
         font-size: 1.2em;
+        margin-bottom: 20px;
     }
 }
 /*nav css*/
@@ -83,6 +84,10 @@ p {
     .myName {
         margin-top: 60px;
     }
+}
+
+#thingsIveDone {
+    margin-top: 55px;
 }
 
 .mainContent {
@@ -259,6 +264,7 @@ portfolio
     height: 200px;
     margin: 0 auto;
     border-radius: 4px;
+    border: 1px solid rgba(216,216,216,0.75);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
@@ -297,7 +303,7 @@ portfolio
 }
 
 #thumbImg8 {
-    background-image: url('../img/expo2015.jpg');
+    background-image: url('../img/musicapp2.png');
 }
 
 .thumbImg:hover {
