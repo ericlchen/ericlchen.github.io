@@ -77,7 +77,7 @@ p {
 }*/
 
 .myName {
-	margin-top: 100px;
+	margin-top: 75px;
 }
 
 @media screen and (max-width: 720px) {
@@ -113,15 +113,16 @@ p {
 .overlay {
     /* Height & width depends on how you want to reveal the overlay */    
     height: 100%;
-    width: 0%;
+    width: 100%;
+    opacity: 0; /*opacity starts at 0, on click it turns to 1*/
     position: fixed; /* Stay in place */
     z-index: 1; /* Sit on top */
     left: 0;
     top: 0;
     background-color: #E74C3C; /* fallback color */
-    background-color: rgba(231,76,60, 0.95); /* w/opacity */
+    background-color: rgba(231,76,60, 0.9); /* w/opacity */
     overflow-x: hidden; /* Disable horizontal scroll */
-    transition: 0.3s; /* 0.5 second transition effect to slide in or slide down the overlay (height or width, depending on reveal) */
+    transition: 0.5s; /* 0.5 second transition effect to slide in or slide down the overlay (height or width, depending on reveal) */
 }
 
 /* Position the content inside the overlay */
@@ -135,17 +136,19 @@ p {
 
 /* The navigation links inside the overlay */
 .overlay a {
-    padding: 8px;
+    padding: 5px;
+    margin-top: 15px;
+    margin-bottom: 15px;
     text-decoration: none;
     font-size: 20px;
     color: #fff;
-    display: block; /* Display block instead of inline */
+    display: none; /* Display block instead of inline */
     transition: 0.3s; /* Transition effects on hover (color) */
 }
 
 /* When you mouse over the navigation links, change their color */
 .overlay a:hover, .overlay a:focus {
-    color: #f1f1f1;
+    color: #fc9b91;
 }
 
 /* Position the close button (top right corner) */
@@ -154,6 +157,8 @@ p {
     top: 20px;
     right: 45px;
     font-size: 40px !important; /* Override the font-size specified earlier (36px) for all navigation links */
+    margin: 0 !important; /* Override the margin from menu options */
+    padding: 8px !important; /* Override the padding from menu options */
 }
 
 /* When the height of the screen is less than 450 pixels, change the font-size of the links and position the close button again, so they don't overlap */
@@ -171,7 +176,9 @@ p {
 	top: 25px;
 	left: 25px;
     z-index: 1000;
+    cursor: pointer;
 }
+
 
 .bar1 {
 	width: 30px;
@@ -254,6 +261,10 @@ portfolio
 }
 
 @media (max-width: 1199px) and (min-width: 992px) {
+    #cardRow1 > .card {
+        height: 550px;
+    }
+
     #cardRow2 > .card {
         height: 550px;
     }
@@ -288,7 +299,7 @@ portfolio
 }
 
 #thumbImg4 {
-    background-image: url('../img/serenetide.jpg');
+    background-image: url('../img/inflightorder.png');
 }
 
 #thumbImg5 {
@@ -391,13 +402,21 @@ a.mainButton {
 /*---------------------------*/
 /*bottom row*/
 /*---------------------------*/
-.bottomRow {
+/*.bottomRow {
     margin: 0 auto;
     position: fixed;
     bottom: 40px;
     left:0;
     text-align: center;
     width: 100vw;
+}*/
+
+.bottomRow {
+    margin: 0 auto;
+    position: relative;
+    top: 30px;
+    text-align: center;
+    width: 100%;
 }
 
 @media screen and (max-width: 720px) {
