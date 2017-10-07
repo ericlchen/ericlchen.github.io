@@ -38,16 +38,23 @@
 	<div id="myNav" class="overlay visible-sm visible-xs">
 
 	  <!-- Button to close the overlay navigation -->
-	  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+	  <a href="javascript:void(0)" class="closebtn displayaz" onclick="closeNav()">&times;</a>
 
 	  <!-- Overlay content -->
 	  <div class="overlay-content">
-	    <a class="transition" href="index">home</a>
-	    <a class="transition" href="portfolio">portfolio</a>
-	    <a class="transition" href="https://medium.com/@ericlchen">medium</a>
+	    <a class="transition displayaz" href="index">home</a>
+	    <a class="transition displayaz" href="portfolio">portfolio</a>
+	    <a class="transition displayaz" href="https://medium.com/@ericlchen">medium</a>
 	  </div>
 
 	</div>
+
+	<!-- Use any element to open/show the overlay navigation menu -->
+	<span onclick="openNav()" id="menuButton" class="hidden-lg hidden-md visible-xs visible-sm">
+		<div class="bar1"></div>
+		<div class="bar2"></div>
+	</span>
+<!-- end nav mobile -->
 
 	<!-- Use any element to open/show the overlay navigation menu -->
 	<span onclick="openNav()" id="menuButton" class="hidden-lg hidden-md visible-xs visible-sm">
