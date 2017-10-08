@@ -2,6 +2,7 @@ body {
 	font-family: 'Varela Round', 'Open Sans', sans-serif;
 	background-color: #D9ECF0;
     padding-bottom: 40px;
+    z-index: 1;
 }
 
 /*fade transition*/
@@ -116,7 +117,7 @@ p {
     width: 100%;
     opacity: 0; /*opacity starts at 0, on click it turns to 1*/
     position: fixed; /* Stay in place */
-    z-index: 1; /* Sit on top */
+    z-index: -1; /* Sit on top */
     left: 0;
     top: 0;
     background-color: #E74C3C; /* fallback color */
