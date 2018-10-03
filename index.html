@@ -11,7 +11,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
 	<!-- font -->
-	<link href="https://fonts.googleapis.com/css?family=Varela+Round" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Gothic+A1:200,300,400,500" rel="stylesheet">
 
 	<!-- emoji -->
 	<link href="https://afeld.github.io/emoji-css/emoji.css" rel="stylesheet">
@@ -25,12 +25,27 @@
 </head>
 <body>
 
-<!-- nav desktop -->
-	<ul class="nav nav-pills nav-stacked miniNav hidden-sm hidden-xs">
-	  <li role="presentation" class="active"><a class="transition" href="/">home</a></li>
-	  <li role="presentation"><a class="transition" href="portfolio">portfolio</a></li>
-	  <li role="presentation"><a href="https://medium.com/@ericlchen" target="_blank">medium</a></li>
-	</ul>
+<!-- nav desktop -->	
+	<nav id="navbar" class="nav navbar-fixed-top hidden-sm hidden-xs">
+		<div class="container">
+			<div class="navbar-header">
+				<a class="navbar-brand transition" href="index.html">Eric Chen</a>
+			</div>
+			<!-- <li class="nav-item">
+		        <a class="nav-link transition" href="about.html">About</a>
+		    </li> -->
+			<ul class="nav navbar-nav navbar-right">
+				<li role="presentation"><a class="transition" href="about.html">About</a></li>
+				<li class="dropdown" role="presentation"><a data-toggle="dropdown" class="transition dropdown-toggle" href="#work">Work <b class="caret"></b></a>
+					<ul class="dropdown-menu">
+						<li><a class="transition" href="smithspace.html">SmithSPACE</a></li>
+						<li><a class="transition" href="guestlogix.html">Guestlogix</a></li>
+					</ul>
+				</li>
+				<li role="presentation"><a href="eric-chen-resume.pdf" target="_blank">Resume</a></li>
+			</ul>
+		</div>
+	</nav>
 <!-- end nav desktop -->
 
 <!-- nav mobile -->
@@ -42,9 +57,14 @@
 
 	  <!-- Overlay content -->
 	  <div class="overlay-content">
-	    <a class="transition displayaz" href="index">home</a>
-	    <a class="transition displayaz" href="portfolio">portfolio</a>
-	    <a class="transition displayaz" href="https://medium.com/@ericlchen" target="_blank">medium</a>
+	    <a class="transition displayaz" href="index.html">Home</a>
+	    <a class="transition displayaz" href="about.html">About</a>
+	    <a id="mob-work" class="displayaz">Work</a>
+	    	<ul id="mob-work-dropdown">
+	    		<li><a class="transition" href="smithspace.html">SmithSPACE</a></li>
+	    		<li><a class="transition" href="guestlogix.html">Guestlogix</a></li>
+	    	</ul>
+	    <a class="displayaz" href="eric-chen-resume.pdf" target="_blank">Resume</a>
 	  </div>
 
 	</div>
@@ -56,65 +76,98 @@
 	</span>
 <!-- end nav mobile -->
 
-<!-- Main Content -->
-	<div class="container">
-		<div class="row myName">
-			<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 text-center">
-				<img id="headshot" class="img-responsive img-circle" src="img/sqheadshot.jpg" style="height:200px; width:200px; margin: 0 auto;">
-				<h1>i'm eric</h1>
-			</div>
-		</div>
+<!-- Hero Desktop -->
+		<div class="bgHero"></div>
+		<div class="hero container">
 
-		<div class="row">
-			<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 text-center">
-				<div class="emojis">
-					<i class="icon em em-mortar_board"></i>
-					<i class="icon em em-art"></i>
-					<i class="icon em em-iphone"></i>
-					<i class="icon em em-coffee"></i>
+			<div class="inner-content">
+				<div>
+					<h1>Eric Chen</h1>
+					<p class="mute">Previously Product Design Intern at TribalScale</p>
+					<div class="spacer-xs"></div>
+					<p>Self-taught designer and student from Smith School of Business at Queen’s University.</p>
+					<div class="spacer-xs"></div>
+					<p>Passionate about crafting beautiful user experiences, solving complex problems and making art.</p>
+					<div class="spacer-xs"></div>
+					<p>Currently looking for new grad roles.</p>
+					<div class="spacer-xs"></div>
+					<div class="spacer-xs"></div>
+					<div class="icon-row">
+						<a href="https://www.linkedin.com/in/ericlchen" target="_blank" class="icon-linkedin transition"></a>
+						<a href="mailto:ericfhchen@gmail.com?Subject=Hello!" target="_blank" class="icon-mail transition"></a>
+						<a href="https://medium.com/@ericlchen" target="_blank" class="icon-medium transition"></a>	
+					</div>		
 				</div>
 			</div>
+
 		</div>
 
-		<div class="row mainContent">
-			<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 text-center">
-				<p class="bio">student. designer. product guy. coffee guy.</p>
-				<p class="bio">i'm a business student that loves crafting enjoyable digital experiences for people.  </p>
-			</div>
-		</div>
+<!-- End Hero -->
 
-		<a class="transition button" id="cta" href="portfolio" style="text-decoration: none;"><div class="gButton mainButton">SEE MY WORK</div></a>
+<div class="spacer-sm"></div>
 
-		<div class="row bottomRow">
-				<a href="https://ca.linkedin.com/in/ericlchen" target="_blank"><i class="fa fa-linkedin"></i></a>
-				<a href="mailto: ericfhchen@gmail.com" target="_blank"><i class="fa fa-envelope-o"></i></a>
-		</div>
+<!-- Main Content (Work) -->
+<div id="work" class="container">
 
+	<div class="section-title">
+		<h1>Work</h1>
 	</div>
 
+<div class="spacer-sm"></div>
+
+	<div id="work-1" class="work">
+		<img class="work-img" src="img/work-1.png">
+		<div class="work-desc">
+			<h2>SmithSpace Mobile</h2>
+			<p class="tags">Side Project • Research • UX • UI • Prototyping</p>
+			<p class="mute">Reimagined the web room booking system at Smith School of Business as a mobile experience.</p>
+			<div class="work-link"><a class="link link-hover" href="#">Read the case study</a></div>
+		</div>
+	</div>
+	
+<div class="spacer-md hidden-xs"></div>
+<div class="spacer-sm visible-xs"></div>
+	
+	<div id="work-2-desk" class="work hidden-xs">
+		<div class="work-desc">
+			<h2>Guestlogix iOS App</h2>
+			<p class="tags">Client Project • UX • UI • Prototyping</p>
+			<p class="mute">Designed user flows and high fidelity screens for in-flight retail experience.</p>
+			<div class="work-link"><a class="link link-hover transition" href="guestlogix.html">Read the case study</a></div>
+		</div>
+		<img class="work-img" src="img/work-2.png">
+	</div>	
+
+	<div id="work-2-mob" class="work visible-xs">
+		<img class="work-img" src="img/work-2.png">
+		<div class="work-desc">
+			<h2>Guestlogix iOS App</h2>
+			<p class="tags">Client Project • UX • UI • Prototyping</p>
+			<p class="mute">Designed user flows and high fidelity screens for in-flight retail experience.</p>
+			<div class="work-link"><a class="link link-hover transition" href="guestlogix.html">Read the case study</a></div>
+		</div>
+	</div>	
+</div>
+<!-- End Main Content (Work) -->
+
+<div class="spacer-lg hidden-xs"></div>
+<div class="spacer-sm visible-xs"></div>
+
+<!-- Footer -->
+	<div id="footer">
+		<div class="icon-row">
+			<a href="https://www.linkedin.com/in/ericlchen" target="_blank" class="icon-linkedin"></a>
+			<a href="mailto:ericfhchen@gmail.com?Subject=Hello!" target="_blank" class="icon-mail"></a>
+			<a href="https://medium.com/@ericlchen" target="_blank" class="icon-medium"></a>	
+		</div>	
+	</div>	
+<!-- End Footer -->
 
 <!-- JQuery & JS -->
 <script type="text/javascript" src="js/jquery-3.1.0.min.js"></script>
 <script type="text/javascript" src="js/bootstrap.min.js"></script>
 <script type="text/javascript" src="js/nav.js"></script>
-
-<script type="text/javascript">
-    $(document).ready(function() {
-        // $("body").css("display", "none");
-        // $("body").fadeIn(650);
-
-        $("a.transition").click(function(event){
-	        event.preventDefault();
-	        linkLocation = this.href;
-	        $(".container").fadeOut(400, redirectPage);      
-	    });
-	         
-	    function redirectPage() {
-	    	if (location.href.indexOf('reload')==-1) location.replace(location.href+'?reload');
-	        window.location = linkLocation;
-	    }
-    });
-</script>
+<script type="text/javascript" src="js/js.js"></script>
 
 </body>
 </html>
