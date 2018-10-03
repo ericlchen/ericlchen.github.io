@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Eric Chen – Guestlogix iOS App</title>
+
+	<!-- css -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+
+	<!-- viewport -->
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+	<!-- font -->
+	<link href="https://fonts.googleapis.com/css?family=Gothic+A1:200,300,400,500" rel="stylesheet">
+
+	<!-- emoji -->
+	<link href="https://afeld.github.io/emoji-css/emoji.css" rel="stylesheet">
+
+	<!-- custom css -->
+	<link rel="stylesheet" type="text/css" href="css/styles.css">
+
+	<!-- favicon -->
+	<link rel="shortcut icon" href="favicon.png">
+
+</head>
+<body>
+
+<!-- nav desktop -->	
+	<nav id="navbar" class="nav navbar-fixed-top hidden-sm hidden-xs">
+		<div class="container">
+			<div class="navbar-header">
+				<a class="navbar-brand transition" href="index.html">Eric Chen</a>
+			</div>
+			<!-- <li class="nav-item">
+		        <a class="nav-link transition" href="about.html">About</a>
+		    </li> -->
+			<ul class="nav navbar-nav navbar-right">
+				<li role="presentation"><a class="transition" href="about.html">About</a></li>
+				<li class="dropdown" role="presentation"><a data-toggle="dropdown" class="transition dropdown-toggle" href="#work">Work <b class="caret"></b></a>
+					<ul class="dropdown-menu">
+						<li><a class="transition" href="smithspace.html">SmithSPACE</a></li>
+						<li><a class="transition" href="guestlogix.html">Guestlogix</a></li>
+					</ul>
+				</li>
+				<li role="presentation"><a href="eric-chen-resume.pdf" target="_blank">Resume</a></li>
+			</ul>
+		</div>
+	</nav>
+<!-- end nav desktop -->
+
+<!-- nav mobile -->
+	<!-- The overlay -->
+	<div id="myNav" class="overlay visible-sm visible-xs">
+
+	  <!-- Button to close the overlay navigation -->
+	  <a href="javascript:void(0)" class="closebtn displayaz" onclick="closeNav()">&times;</a>
+
+	  <!-- Overlay content -->
+	  <div class="overlay-content">
+	    <a class="transition displayaz" href="index.html">Home</a>
+	    <a class="transition displayaz" href="about.html">About</a>
+	    <a id="mob-work" class="displayaz">Work</a>
+	    	<ul id="mob-work-dropdown">
+	    		<li><a class="transition" href="smithspace.html">SmithSPACE</a></li>
+	    		<li><a class="transition" href="guestlogix.html">Guestlogix</a></li>
+	    	</ul>
+	    <a class="transition displayaz" href="eric-chen-resume.pdf" target="_blank">Resume</a>
+	  </div>
+
+	</div>
+
+	<!-- Use any element to open/show the overlay navigation menu -->
+	<span onclick="openNav()" id="menuButton" class="hidden-lg hidden-md visible-xs visible-sm">
+		<div class="bar1"></div>
+		<div class="bar2"></div>
+	</span>
+<!-- end nav mobile -->
+
+<div class="spacer-sm"></div>
+
+<!-- Main Content (Work) -->
+<div class="article container">
+	<div class="inner-content">
+		<div>
+			<div class="section-title">
+				<h1>Case Study: In-Flight Merchandise Ordering</h1>
+				<p class="mute">My First Experience in a Client Project</p>
+			</div>
+
+			<div class="spacer-sm"></div>
+			
+			<div class="section-title">
+				<p class="mute">Context</p>
+			</div>
+
+			<div class="spacer-xs"></div>
+
+			<p class="">As a UI/UX design intern at TribalScale, I had the opportunity to work on a real client project for 4 weeks with guidance from a lead designer. I was given wireframes and low-fidelity mockups to a higher fidelity along with developing a prototype for the client and developers to interact with. Additionally, we conducted remote usability tests and iterated based on user feedback. Finally, I handed the screens off to developers along with a style/assets sheet so they could start building easier.</p>
+
+			<p class="">The team consisted of 2 product managers, 2 designers, and 2 developers. We had weekly sync-up meetings with the client to present our progress, demo the prototype, and gather design feedback.</p>
+
+			<div class="spacer-xs"></div>
+
+			<div class="section-title">
+				<p class="mute">Product Description</p>
+			</div>
+
+			<div class="spacer-xs"></div>
+
+			<p class="">The product was a mobile app which allowed users to order food and duty-free merchandise before or during their flight.</p>
+
+			<p>The app needed to have three distinct feature sets:</p>
+
+			<ol>
+				<li>Catalogue — for users to browse through products</li>
+				<li>A Cart / Checkout Process</li>
+				<li>Order History — for users to check on their current or past orders</li>
+			</ol>
+
+			<div class="spacer-xs"></div>
+
+			<div class="section-title">
+				<p class="mute">Initial Screen Design Process</p>
+			</div>			
+
+			<div class="spacer-xs"></div>
+
+			<p class="">When I was staffed on the project, the user research and wireframes were already completed by the client and our team respectively. So, my job was to build high-fidelity mockups and a prototype based on the flows that were given to me.</p>
+			<p>I started with the home screen. My lead designer and I brainstormed some concepts and then combined our ideas to form the final version of the screen. Here were my concepts:</p>
+
+			<img class="article-img" src="img/guestlogix/1.png">
+
+			<div class="spacer-xs"></div>
+
+			<p>We did the same for the Catalogue screens. Here were my concepts:</p>
+
+			<img class="article-img" src="img/guestlogix/2.png">
+			
+			<div class="spacer-xs"></div>
+
+			<p>Once we completed these initial screens, we had a better feeling for how the rest of the screens would look. I took full responsibility for the “Jump The Line” and Cart/Checkout screens, as well as iterating and redesigning the flows along the way.</p>
+
+			<p class="blockquote">Skip to the end of this article to see all the screens in the Marvel prototype.</p>
+
+			<div class="spacer-xs"></div>
+
+			<div class="section-title">
+				<p class="mute">Running Into Trouble – Checkout Screens</p>
+			</div>			
+
+			<div class="spacer-xs"></div>
+
+			<p>The biggest roadblock we ran into was figuring out the user experience of the cart and checkout screens. Our first solution was to have a single screen to display the customer’s cart and allow the customer complete their purchase. The screen also incorporated an up-sell section that offered a deal, and a section for users to choose their payment option. I mocked up two options — one prioritized the up-sell, the other prioritized the order summary and costs.</p>
+
+			<img class="article-img" src="img/guestlogix/3.png">
+
+			<div class="spacer-xs"></div>
+
+			<p>After user testing and bringing this to the client, I realized there was a missing step in the checkout process. Although I thought a single screen would decrease the cognitive load for users compared to having multiple steps, it had quite the opposite effect. Instead, users actually wanted a multi-step checkout. They wanted to see and edit their cart before confirming their purchase on the next screen. The reason behind this is because breaking up the process reduces the number of actions the user needed to take on each page. It would be too much for the user to handle if they had to edit their cart and choose their payment option and confirm their order on the same page.</p>
+
+			<p>With these insights in mind, I redesigned the flow and look of the checkout process. I made the cart editable, displayed any discounts, and separated the cart/checkout screens. Here’s what the process looked like afterward:</p>
+
+			<img class="article-img" src="img/guestlogix/4.png">
+
+			<div class="spacer-xs"></div>
+
+			<div class="section-title">
+				<p class="mute">Lessons Learned</p>
+			</div>
+
+			<div class="spacer-xs"></div>	
+
+			<p>I had three main learning outcomes from this project:</p>
+
+			<p><b>1. Holistic View of the Product Design Process</b> — this project showed me what the process is like of building a digital product for a client, from scratch.</p>
+			
+			<p><b>2. How To Build A Production-Ready UI</b>—from colours and spacing to Sketch techniques and proper iOS UI conventions, I am now equipped with a toolkit that will let me design mobile apps much faster</p>
+
+			<p><b>3. Gathering Feedback and Pushback</b>—the client isn’t necessarily always right, but the user is. Every iteration, we used our prototype to gather feedback from users, and we were ready to present our findings to the client if they had conflicting feedback. It is often easy to succumb to client requests, but we must keep in mind that as a designer, our responsibility is to make the user happy. Communicating this to clients is extremely important if there are conflicting design decisions.</p>
+
+			<div class="spacer-xs"></div>
+
+			<div class="section-title">
+				<p class="mute">Marvel Prototype</p>
+			</div>
+
+			<div class="spacer-xs"></div>	
+
+			<p>I compiled a Marvel prototype without the use of the client’s branding for privacy purposes. Here it is linked below:</p>
+
+			<iframe src="https://marvelapp.com/108h9abg?emb=1&iosapp=false&frameless=false" width="375" height="667" allowTransparency="true" frameborder="0"></iframe>
+
+			<div class="spacer-sm"></div>	
+
+			<div class="work-link"><a class="link link-hover transition" href="smithspace.html">Read the SmithSpace Case Study <i class="fa fa-angle-right" style="font-size: 18px"></i></a></div>
+			<!-- <div class="icon-row">
+				<a href="https://www.linkedin.com/in/ericlchen" target="_blank" class="icon-linkedin"></a>
+				<a href="mailto:ericfhchen@gmail.com?Subject=Hello!" target="_blank" class="icon-mail"></a>
+				<a href="https://medium.com/@ericlchen" target="_blank" class="icon-medium"></a>	
+			</div>		 -->
+
+
+		</div>
+
+	</div>
+	<!-- <div class="bgHero"></div> -->
+</div>
+
+<!-- End Main Content -->
+
+
+<div class="spacer-lg hidden-xs"></div>
+<div class="spacer-sm visible-xs"></div>
+
+<!-- Footer -->
+	<div id="footer">
+		<div class="icon-row">
+			<a href="https://www.linkedin.com/in/ericlchen" target="_blank" class="icon-linkedin"></a>
+			<a href="mailto:ericfhchen@gmail.com?Subject=Hello!" target="_blank" class="icon-mail"></a>
+			<a href="https://medium.com/@ericlchen" target="_blank" class="icon-medium"></a>	
+		</div>	
+	</div>	
+<!-- End Footer -->
+
+<!-- JQuery & JS -->
+<script type="text/javascript" src="js/jquery-3.1.0.min.js"></script>
+<script type="text/javascript" src="js/bootstrap.min.js"></script>
+<script type="text/javascript" src="js/nav.js"></script>
+<script type="text/javascript" src="js/js.js"></script>
+
+</body>
+</html>
