@@ -490,11 +490,21 @@ a:hover {
 
 .article.container {
     width: 60%;
+    overflow: visible;
 }
 
 .article-img {
     width: 100%;
-    pointer-events: none;
+    cursor: pointer;
+    display: block;
+    transition: width 0.2s, height 0.2s;
+}
+
+.article-img.bigger {
+    width: 135%;
+    position: relative;
+    left: -20%;
+    transition: width 0.2s, height 0.2s;
 }
 
 iframe {

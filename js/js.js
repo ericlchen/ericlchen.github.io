@@ -20,4 +20,16 @@ $(document).ready(function() {
 	        $('.navbar-fixed-top').removeClass('filled');
 		}
 	});
+
+    // var small={width:"100%", height:"auto"};
+    // var large={width:"140%", height:"auto"};
+    // $(".article-img").css(small).on("click", function() {
+    //     $(this).animate(large);
+    //     $(".article-img").not($(this)).animate(small);
+    // })
+
+    $(".article-img").on("click", function() {
+        $(this).toggleClass("bigger");
+    });
+
 });
