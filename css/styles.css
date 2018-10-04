@@ -498,6 +498,7 @@ a:hover {
     cursor: pointer;
     display: block;
     transition: width 0.2s, height 0.2s;
+    margin: 0 auto;
 }
 
 .article-img.bigger {
