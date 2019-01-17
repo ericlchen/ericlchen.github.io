@@ -223,6 +223,15 @@ a:hover {
 
 .navbar-brand {
     color: #000000;
+    padding-top: 0;
+}
+
+.navbar-brand img {
+    max-height: 50px;
+}
+
+a.navbar-brand {
+    opacity: 1;
 }
 
 .active {
