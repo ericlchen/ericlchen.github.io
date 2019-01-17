@@ -37,8 +37,18 @@
 		        <a class="nav-link transition" href="about.html">About</a>
 		    </li> -->
 			<ul class="nav navbar-nav navbar-right">
-				<li role="presentation"><a class="active transition" href="about">About</a></li>
-				<li role="presentation"><a href="eric-chen-resume.pdf" target="_blank">CV</a></li>
+				<li role="presentation"><a class="transition" href="about">About</a></li>
+				<li class="dropdown" role="presentation"><a data-toggle="dropdown" class="transition dropdown-toggle" href="#work">Work <b class="caret"></b></a>
+					<ul class="dropdown-menu">
+						<li><a class="transition" href="smithspace">SmithSPACE</a></li>
+						<li><a class="transition" href="guestlogix">Guestlogix</a></li>
+						<li><a class="transition" href="lucy">LUCY</a></li>
+						<li><a class="transition" href="for">FOR</a></li>
+						<li><a class="transition" href="lw">LOSERS WEEPERS</a></li>
+						<li><a class="transition" href="oligarchy">OLIGARCHY</a></li>
+					</ul>
+				</li>
+				<li role="presentation"><a href="eric-chen-resume.pdf" target="_blank">Resume</a></li>
 			</ul>
 		</div>
 	</nav>
@@ -51,11 +61,20 @@
 	  <!-- Button to close the overlay navigation -->
 	  <a href="javascript:void(0)" class="closebtn displayaz" onclick="closeNav()">&times;</a>
 
-	  <!-- Overlay content -->
+	<!-- Overlay content -->
 	  <div class="overlay-content">
-	    <a class="transition displayaz" href="/">Work</a>
+	    <a class="transition displayaz" href="">Home</a>
 	    <a class="transition displayaz" href="about">About</a>
-	    <a class="displayaz" href="eric-chen-resume.pdf" target="_blank">Resume</a>
+	    <a id="mob-work" class="displayaz">Work</a>
+	    	<ul id="mob-work-dropdown">
+	    		<li><a class="transition" href="smithspace">SmithSPACE</a></li>
+				<li><a class="transition" href="guestlogix">Guestlogix</a></li>
+				<li><a class="transition" href="lucy">LUCY</a></li>
+				<li><a class="transition" href="for">FOR</a></li>
+				<li><a class="transition" href="lw">LOSERS WEEPERS</a></li>
+				<li><a class="transition" href="oligarchy">OLIGARCHY</a></li>
+	    	</ul>
+	    <a class="transition displayaz" href="eric-chen-resume.pdf" target="_blank">Resume</a>
 	  </div>
 
 	</div>
