@@ -309,7 +309,8 @@ a:hover {
     } 
 
     .inner-content {
-        max-width: 85%;
+        max-width: 100%;
+        margin: 0;
     }
 }
 
@@ -457,20 +458,31 @@ a:hover {
 
 /*Footer CSS*/
 #footer {
-    height: 96px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    background-color: #000;
+    color: #fff;
 }
 
-.icon-row a {
-    opacity: 1;
-}
+@media screen and (min-width: 768px) {
+    #footer .footer-container {
+        display: flex;
+        justify-content: space-between;
+        padding: 0;
+    }
 
-.icon-row a:hover {
-    opacity: 0.6;
-}
+    #footer p.section-title {
+        text-align: left;
+    }
 
+    #footer .work, #footer .work-img {
+        margin: 0 auto;
+        max-width: 200px;
+        max-height: 200px;
+    }
+
+    #footer .work {
+        margin: 0 auto;
+    }
+}
 
 /*Main Content (About) CSS*/
 .about {
@@ -499,14 +511,10 @@ a:hover {
     z-index: -1;
 }
 
-.about .inner-content {
-    max-width: 84%;
-    padding: 0;
-}
 
 .about h1 {
-    font-size: 36px;
-    line-height: 48px;
+    font-size: 32px !important;
+    line-height: 40px;
 }
 
 .about p {
@@ -550,9 +558,8 @@ a:hover {
     }
 
     .about a {
-        font-size: 14px; 
+        opacity: 1;
     }
-
     
 }
 
@@ -823,4 +830,7 @@ iframe {
     border-radius: 10px;
     margin-bottom: 5px;
 }
+
+
+
 
