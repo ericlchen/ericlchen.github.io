@@ -1,6 +1,6 @@
 /*Global CSS*/
 body {
-	font-family: Gothic A1, sans-serif;
+	font-family: body-regular, 'Roboto', sans-serif;
     background-color: #000000;
     z-index: 1;
     color: #ffffff;
@@ -23,6 +23,11 @@ body {
 
 .spacer-lg {
     height: 16em;
+    pointer-events: none;
+}
+
+.spacer-xl {
+    height: 20em;
     pointer-events: none;
 }
 
@@ -75,7 +80,7 @@ body {
 
 /*Font Styling*/
 h1 {
-	font-family: Gothic A1, sans-serif;
+	font-family: body-bold-ext, 'Roboto', sans-serif;
     font-style: normal;
     font-weight: 500;
     line-height: 64px;
@@ -83,7 +88,7 @@ h1 {
 }
 
 h2 {
-    font-family: Gothic A1;
+    font-family: body-regular-ext, sans-serif;
     font-style: normal;
     font-weight: 500;
     line-height: 36px;
@@ -91,12 +96,12 @@ h2 {
 }
 
 p, li {
-	font-family: Gothic A1;
+	font-family: body-regular, sans-serif;
     font-style: normal;
     font-weight: 200;
-    line-height: 30px;
-    font-size: 20px;
-    letter-spacing: 0.02em;
+    line-height: 27px;
+    font-size: 18px;
+    /*letter-spacing: 0.02em;*/
 }
 
 a {
@@ -156,40 +161,22 @@ b {
 /*Link CSS*/
 a:hover {
     opacity: 1;
-    color:#fff;
+    color:#000;
 }
 
-.link {
+/*.link {
     color: #fff;
     opacity: 1;
     display: inline-block;
     position: relative;
     text-decoration: none;
-}
-
+}*/
+/*
 .work-link {
     position: relative;
     display: block;
     margin-top: 2em;
-}
-
-.link-hover:after {
-     content: '';
-     position: absolute;
-     width: 100%;
-     height: 3px;
-     bottom: 0;
-     left: 0;
-     background-color: #fff;
-     transform: scaleX(0);
-     transform-origin: bottom right;
-     transition: transform 0.4s;
-}
-
- .link-hover:hover:after {
-     transform-origin: bottom left;
-     transform: scaleX(1);
-}
+}*/
  
 
 
@@ -203,23 +190,27 @@ a:hover {
 }
 
 #navbar.filled {
-    background-color: rgba(0,0,0,1);
-    transition: background-color 0.7s ease 0s;
+    background-color: rgba(255,255,255,1);
+    box-shadow: ;
+    transition: background-color 0.5s ease 0s;
+}
 
+.body-article #navbar {
+    background-color: #fff;
 }
 
 .navbar-nav>li.active>a, .navbar-nav>li.active>a:focus, .navbar-nav>li.active>a:hover {
-	color: #ffffff;
+	color: #000000;
 	background: none;
 }
 
 .navbar-nav>li>a {
-	color: #ffffff;
+	color: #000000;
 }
 
 .navbar-nav>li>a:hover, .navbar-nav>li>a:focus {
 	background: none;
-	color: #ffffff;
+	color: #000000;
     -webkit-transition: color .3s ease-in-out;
     -moz-transition: color .3s ease-in-out;
     -o-transition: color .3s ease-in-out;
@@ -228,6 +219,10 @@ a:hover {
 
 .navbar-nav>li {
     font-size: 14px;
+}
+
+.navbar-brand {
+    color: #000000;
 }
 
 .active {
@@ -270,84 +265,158 @@ a:hover {
 
 /*Hero CSS*/
 .hero {
-    height: 100vh;
+    height: 70vh;
+    width: 100%;
+    background: #ffffff;
+    color: #000;
 }
 
-.bgHero {
-    min-width: 40%;
-    height: 100vh;
-    background-image: url('../img/bg.png');
-    background-position: left;
-    background-repeat: no-repeat;
-    background-size: contain;
-    float: left;
-}
-
-.inner-content {
-    padding-left: 4%;
-    height: 100%;
+.hero.container {
+    padding: 0 13.5%;
     display: flex;
     align-items: center;
     align-content: center;
 }
 
+.inner-content {
+    height: 100%;
+    max-width: 75%;
+    display: flex;
+    align-items: center;
+    align-content: center;
+    padding-bottom: 6%;
+    margin: 0 24px;
+}
+
+.inner-content p {
+    font-family: 'body-regular';
+    line-height: 32px;
+}
+
+
 @media screen and (max-width: 768px) {
-    .bgHero {
-        width: 100%;
-        background-size: cover;
-        opacity: 0.15;
-    }
     .hero {
         height: 100vh;
-        position: absolute;
-        left: 0;
-        top: 24px;
+    }
+
+    .hero.container {
+        padding: 0 10%;
     }
 
     .hero p {
         line-height: 28px;
         margin-bottom: 6px;
     } 
+
+    .inner-content {
+        max-width: 85%;
+    }
 }
 
 
 /*Main Content (Work) CSS*/
-.work-img {
-    max-width: 450px;
-    height: auto;
-    pointer-events: none;
+#work {
+    z-index: 1;
+    overflow: visible;
 }
 
-.work-desc {
-    float: right;
-    display: block;
-    padding-left: 12%;
-    
+.bgContainer {
+    overflow: visible;
+    background-image: url(../img/bg-opacity.png);
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .work {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    display: inline-block;
+    margin-top: -20%;
+    max-width: 500px;
+    max-height: 500px;
 }
 
-.work .work-desc a {
-    font-weight: 500;
-    line-height: 36px;
-    font-size: 16px;
-    letter-spacing: 0.2em;
-    text-transform: uppercase;
+.work a {
+    opacity: 1 !important;
+    border-radius: 5px;
+}
+
+.work-img {
+    max-width: 500px;
+    width: auto;
+    height: auto;
+    border-radius: 3px;
+    -webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+    -moz-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+    -ms-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+    -o-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+    -webkit-transition: all 0.25s ease-in-out;
+    -moz-transition: all 0.25s ease-in-out;
+    -ms-transition: all 0.25s ease-in-out;
+    -o-transition: all 0.25s ease-in-out;
+    transition: all 0.25s ease-in-out;
+}
+
+.work-img:hover {
+  -webkit-box-shadow: 0 5px 40px rgba(0, 0, 0, 0.19), 0 5px 20px rgba(0, 0, 0, 0.23);
+  -moz-box-shadow: 0 5px 40px rgba(0, 0, 0, 0.19), 0 5px 20px rgba(0, 0, 0, 0.23);
+  -ms-box-shadow: 0 5px 40px rgba(0, 0, 0, 0.19), 0 5px 20px rgba(0, 0, 0, 0.23);
+  -o-box-shadow: 0 5px 40px rgba(0, 0, 0, 0.19), 0 5px 20px rgba(0, 0, 0, 0.23);
+  box-shadow: 0 5px 40px rgba(0, 0, 0, 0.19), 0 5px 20px rgba(0, 0, 0, 0.23);
+  opacity: 0.9;
+}
+
+.work .work-desc {
+    font-weight: 700;
+    line-height: 12px;
+    font-size: 20px;
     text-decoration: none;
     color: #fff;
+    margin-top: 20px;
 }
 
-#work-2-desk .work-desc {
-    float:left;
-    padding-left: 0;
-    padding-right: 12%;
+.work .work-desc p {
+    margin-bottom: 2px;
+}
+
+.work .work-desc-title {
+    font-family: 'body-regular-ext';
+}
+
+.work .work-desc .mute {
+    font-family: body-regular, 'Roboto', sans-serif;
+    font-size: 16px;
+}
+
+#work-2, #work-4, #work-6 {
+    float: right;
+}
+
+@media screen and (max-width: 1200px) {
+    .work {
+        margin-top: -25%;
+    }
+
+    .work-img {
+        max-width: 400px;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .work {
+        margin-top: -30%;
+    }
+
+    .work-img {
+        max-width: 325px;
+    }
 }
 
 @media screen and (max-width: 768px) {
+    #work {
+        z-index: 0;
+        overflow: hidden
+    }
+
     .container {
         padding: 0 24px;
     }
@@ -355,6 +424,8 @@ a:hover {
     .work {
         display: block;
         text-align: center;
+        margin: 0;
+        max-width: 100%;
     }
 
     .work-img {
@@ -362,10 +433,16 @@ a:hover {
         height: auto;
     }
 
-    .work-desc {
+    .work .work-desc {
         float:none;
-        padding: 0;
+        max-width: 325px;
         text-align: left;
+        margin: 0 auto;
+        margin-top: 16px;
+    }
+
+    .work .work-desc .mute {
+        font-size: 14px;
     }
 
     #work-2 .work-img {
@@ -397,7 +474,8 @@ a:hover {
 
 /*Main Content (About) CSS*/
 .about {
-    max-height: 100vh; 
+    max-height: 100vh;
+    color: #000000;
 }
 
 .about .bgHero {
@@ -413,7 +491,7 @@ a:hover {
     width: 100%;
     background-size: contain;
     float: right;
-    opacity: 0.1;
+    /*opacity: 0.1;*/
     overflow: visible;
     position: absolute;
     top: 0;
@@ -438,13 +516,8 @@ a:hover {
 }
 
 .about a, .article a {
-    font-weight: 500;
-    line-height: 36px;
-    font-size: 16px;
-    letter-spacing: 0.2em;
-    text-transform: uppercase;
     text-decoration: none;
-    color: #fff;
+    color: #000000;
 }
 
 .about .section-title {
@@ -484,6 +557,11 @@ a:hover {
 }
 
 /*Case Study Article CSS*/
+.body-article {
+    background-color: #fff;
+    color: #000;
+}
+
 .article {
     margin-top: 82px;
 }
@@ -493,19 +571,37 @@ a:hover {
     overflow: visible;
 }
 
+.body-article .hero.container {
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.body-article .hero.container .section-title {
+    color: #fff;
+}
+
+.article .inner-content {
+    max-width: 100%;
+}
+
 .article-img {
-    width: 100%;
-    cursor: pointer;
-    display: block;
-    transition: width 0.2s, height 0.2s;
+    max-width: 40%;
+    display: inline-block;
     margin: 0 auto;
 }
 
-.article-img.bigger {
-    width: 135%;
-    position: relative;
-    left: -20%;
-    transition: width 0.2s, height 0.2s;
+.article-img-mob {
+    max-width: 75%;
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 24px;
+}
+
+.img-container {
+    display: flex;
+    align-content: center;
+    align-items: center;
 }
 
 iframe {
@@ -523,16 +619,21 @@ iframe {
 
 .article p, .article li {
     font-size: 18px;
-    line-height: 28px;
+    line-height: 32px;
     margin-bottom: 28px;
     opacity: 0.9;
 }
 
+.section-title .subheading {
+    font-family: 'body-regular-ext'
+}
+
 .section-title p {
+    font-family: 'body-bold-ext';
     font-size: 24px;
     margin-top: 20px;
     margin-bottom: 0 !important;
-    opacity: 0.6;
+    opacity: 1 !important;
 }
 
 .section-subtitle p {
@@ -546,12 +647,40 @@ iframe {
 }
 
 @media screen and (max-width: 786px) {
+    .body-article .hero.container {
+        background-size: auto;
+        padding: 0;
+    }
+
+    .body-article .hero.container .section-title {
+        margin: 0 24px;
+    }
+
+    .body-article .hero.container .section-title h1 {
+        font-size: 32px;
+        line-height: 48px;
+    }
+
+    .body-article .hero.container .section-title p {
+        font-size: 18px;
+        line-height: 28px;
+    }
+
+    .article {
+        margin-top: 32px;
+    }
+
     .article iframe {
         width: 90%;
     }
 
     .article.container {
         width: 100%;
+        padding: 0 24px;
+    }
+
+    .article.container .inner-content {
+        margin: 0;
     }
 
     .article h1 {
@@ -560,14 +689,13 @@ iframe {
     }
 
     .article p {
-        font-size: 18px;
+        font-size: 16px;
         line-height: 28px;
         margin-bottom: 28px;
         opacity: 0.9;
     }
 
     .article a {
-        font-size: 12px;
         text-align: left;
     }
 
@@ -677,17 +805,17 @@ iframe {
 
 .bar1 {
     width: 30px;
-    background-color: #ffffff;
+    background-color: #B8B8B8;
     height: 3px;
-    border-radius: 1px;
+    border-radius: 10px;
     margin-bottom: 5px;
 }
 
 .bar2 {
     width: 23px;
-    background-color: #ffffff;
+    background-color: #B8B8B8;
     height: 3px;
-    border-radius: 1px;
+    border-radius: 10px;
     margin-bottom: 5px;
 }
 

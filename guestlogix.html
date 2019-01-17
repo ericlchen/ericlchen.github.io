@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Eric Chen – Guestlogix iOS App</title>
+	<title>Eric Chen – Guestlogix</title>
 
 	<!-- css -->
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
@@ -11,10 +11,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
 	<!-- font -->
-	<link href="https://fonts.googleapis.com/css?family=Gothic+A1:200,300,400,500" rel="stylesheet">
-
-	<!-- emoji -->
-	<link href="https://afeld.github.io/emoji-css/emoji.css" rel="stylesheet">
+	<link href="css/font-face.css" rel="stylesheet">
 
 	<!-- custom css -->
 	<link rel="stylesheet" type="text/css" href="css/styles.css">
@@ -23,7 +20,7 @@
 	<link rel="shortcut icon" href="favicon.png">
 
 </head>
-<body>
+<body class="body-article">
 
 <!-- nav desktop -->	
 	<nav id="navbar" class="nav navbar-fixed-top hidden-sm hidden-xs">
@@ -40,6 +37,9 @@
 					<ul class="dropdown-menu">
 						<li><a class="transition" href="smithspace">SmithSPACE</a></li>
 						<li><a class="transition" href="guestlogix">Guestlogix</a></li>
+						<li><a class="transition" href="lucy">LUCY</a></li>
+						<li><a class="transition" href="for">FOR</a></li>
+						<li><a class="transition" href="lw">LOSERS WEEPERS</a></li>
 					</ul>
 				</li>
 				<li role="presentation"><a href="eric-chen-resume.pdf" target="_blank">Resume</a></li>
@@ -55,14 +55,17 @@
 	  <!-- Button to close the overlay navigation -->
 	  <a href="javascript:void(0)" class="closebtn displayaz" onclick="closeNav()">&times;</a>
 
-	  <!-- Overlay content -->
+	<!-- Overlay content -->
 	  <div class="overlay-content">
-	    <a class="transition displayaz" href="/">Home</a>
+	    <a class="transition displayaz" href="">Home</a>
 	    <a class="transition displayaz" href="about">About</a>
 	    <a id="mob-work" class="displayaz">Work</a>
 	    	<ul id="mob-work-dropdown">
 	    		<li><a class="transition" href="smithspace">SmithSPACE</a></li>
-	    		<li><a class="transition" href="guestlogix">Guestlogix</a></li>
+				<li><a class="transition" href="guestlogix">Guestlogix</a></li>
+				<li><a class="transition" href="lucy">LUCY</a></li>
+				<li><a class="transition" href="for">FOR</a></li>
+				<li><a class="transition" href="lw">LOSERS WEEPERS</a></li>
 	    	</ul>
 	    <a class="transition displayaz" href="eric-chen-resume.pdf" target="_blank">Resume</a>
 	  </div>
@@ -76,18 +79,23 @@
 	</span>
 <!-- end nav mobile -->
 
-<div class="spacer-sm"></div>
+<div class="spacer-xs hidden-xs"></div>
+<div class="spacer-xs hidden-xs"></div>
+<div class="spacer-xs hidden-xs"></div>
+<div class="spacer-xs hidden-xs"></div>
+<div class="spacer-xs hidden-xs"></div>
 
 <!-- Main Content (Work) -->
+<div class="hero container" style="background-image: url('img/work-2.png'); background-color: #995928;">
+	<div class="section-title">
+		<h1>Guestlogix</h1>
+		<p class="subheading">In-Flight Merchandise Ordering App</p>
+	</div>
+</div>	
+
 <div class="article container">
 	<div class="inner-content">
 		<div>
-			<div class="section-title">
-				<h1>Case Study: In-Flight Merchandise Ordering</h1>
-				<p class="mute">My First Experience in a Client Project</p>
-			</div>
-
-			<div class="spacer-sm"></div>
 			
 			<div class="section-title">
 				<p class="mute">Context</p>
@@ -95,110 +103,70 @@
 
 			<div class="spacer-xs"></div>
 
-			<p class="">As a UI/UX design intern at TribalScale, I had the opportunity to work on a real client project for 4 weeks with guidance from a lead designer. I was given wireframes and low-fidelity mockups to a higher fidelity along with developing a prototype for the client and developers to interact with. Additionally, we conducted remote usability tests and iterated based on user feedback. Finally, I handed the screens off to developers along with a style/assets sheet so they could start building easier.</p>
-
-			<p class="">The team consisted of 2 product managers, 2 designers, and 2 developers. We had weekly sync-up meetings with the client to present our progress, demo the prototype, and gather design feedback.</p>
+			<p class="">Guestlogix is a mobile platform that allows passengers to order merchandise before or during their flight. During my internship at TribalScale, I had the opportunity to work on the redesign of the iOS app for passengers. During the design phase, I was responsible for creating majority of the user flows, screens, and assets, as well as compiling an InVision prototype. During the development phase, I assisted the developers by making assets and managing the Zeplin library. The team consisted of a product manager, two developers, and two designers.  </p>
 
 			<div class="spacer-xs"></div>
 
 			<div class="section-title">
-				<p class="mute">Product Description</p>
+				<p class="mute">Process</p>
 			</div>
 
 			<div class="spacer-xs"></div>
 
-			<p class="">The product was a mobile app which allowed users to order food and duty-free merchandise before or during their flight.</p>
-
-			<p>The app needed to have three distinct feature sets:</p>
-
-			<ol>
-				<li>Catalogue — for users to browse through products</li>
-				<li>A Cart / Checkout Process</li>
-				<li>Order History — for users to check on their current or past orders</li>
-			</ol>
+			<p>We were provided with user research done prior to the inception of the project, which we used to guide our designs. By utilizing a familiar e-commerce framework, we were able to focus on improving key experience points: priority boarding passes and the customer checkout flow. The priority boarding pass was reimagined as an Apple Wallet ticket and the checkout flow was designed to guide users through a stepped process. We held weekly in-person design reviews with the Guestlogix team where I was responsible for walking the client through our design decisions and prototype. </p>
 
 			<div class="spacer-xs"></div>
 
 			<div class="section-title">
-				<p class="mute">Initial Screen Design Process</p>
-			</div>			
-
-			<div class="spacer-xs"></div>
-
-			<p class="">When I was staffed on the project, the user research and wireframes were already completed by the client and our team respectively. So, my job was to build high-fidelity mockups and a prototype based on the flows that were given to me.</p>
-			<p>I started with the home screen. My lead designer and I brainstormed some concepts and then combined our ideas to form the final version of the screen. Here were my concepts:</p>
-
-			<img class="article-img" src="img/guestlogix/1.png">
-
-			<div class="spacer-xs"></div>
-
-			<p>We did the same for the Catalogue screens. Here were my concepts:</p>
-
-			<img class="article-img" src="img/guestlogix/2.png">
-			
-			<div class="spacer-xs"></div>
-
-			<p>Once we completed these initial screens, we had a better feeling for how the rest of the screens would look. I took full responsibility for the “Jump The Line” and Cart/Checkout screens, as well as iterating and redesigning the flows along the way.</p>
-
-			<p class="blockquote">Skip to the end of this article to see all the screens in the Marvel prototype.</p>
-
-			<div class="spacer-xs"></div>
-
-			<div class="section-title">
-				<p class="mute">Running Into Trouble – Checkout Screens</p>
-			</div>			
-
-			<div class="spacer-xs"></div>
-
-			<p>The biggest roadblock we ran into was figuring out the user experience of the cart and checkout screens. Our first solution was to have a single screen to display the customer’s cart and allow the customer complete their purchase. The screen also incorporated an up-sell section that offered a deal, and a section for users to choose their payment option. I mocked up two options — one prioritized the up-sell, the other prioritized the order summary and costs.</p>
-
-			<img class="article-img" src="img/guestlogix/3.png">
-
-			<div class="spacer-xs"></div>
-
-			<p>After user testing and bringing this to the client, I realized there was a missing step in the checkout process. Although I thought a single screen would decrease the cognitive load for users compared to having multiple steps, it had quite the opposite effect. Instead, users actually wanted a multi-step checkout. They wanted to see and edit their cart before confirming their purchase on the next screen. The reason behind this is because breaking up the process reduces the number of actions the user needed to take on each page. It would be too much for the user to handle if they had to edit their cart and choose their payment option and confirm their order on the same page.</p>
-
-			<p>With these insights in mind, I redesigned the flow and look of the checkout process. I made the cart editable, displayed any discounts, and separated the cart/checkout screens. Here’s what the process looked like afterward:</p>
-
-			<img class="article-img" src="img/guestlogix/4.png">
-
-			<div class="spacer-xs"></div>
-
-			<div class="section-title">
-				<p class="mute">Lessons Learned</p>
+				<p class="mute">Video Demo</p>
 			</div>
 
-			<div class="spacer-xs"></div>	
+			<div class="spacer-xs"></div>
+			<div class="spacer-xs"></div>
 
-			<p>I had three main learning outcomes from this project:</p>
+			<video preload="auto" muted autoplay loop width="1266" height="718" style="width:100%; height:100%">
+				<source src="video/guestlogix.mp4" type="video/mp4">
+				Your browser does not support the video.
+			</video>
+			<p class="caption">Source: Guestlogix</p>
 
-			<p><b>1. Holistic View of the Product Design Process</b> — this project showed me what the process is like of building a digital product for a client, from scratch.</p>
-			
-			<p><b>2. How To Build A Production-Ready UI</b>—from colours and spacing to Sketch techniques and proper iOS UI conventions, I am now equipped with a toolkit that will let me design mobile apps much faster</p>
-
-			<p><b>3. Gathering Feedback and Pushback</b>—the client isn’t necessarily always right, but the user is. Every iteration, we used our prototype to gather feedback from users, and we were ready to present our findings to the client if they had conflicting feedback. It is often easy to succumb to client requests, but we must keep in mind that as a designer, our responsibility is to make the user happy. Communicating this to clients is extremely important if there are conflicting design decisions.</p>
-
+			<div class="spacer-xs"></div>
 			<div class="spacer-xs"></div>
 
 			<div class="section-title">
-				<p class="mute">Marvel Prototype</p>
+				<p class="mute">Prototype</p>
 			</div>
 
-			<div class="spacer-xs"></div>	
-
-			<p>I compiled a Marvel prototype without the use of the client’s branding for privacy purposes. Here it is linked below:</p>
+			<div class="spacer-xs"></div>
+			<div class="spacer-xs"></div>
 
 			<iframe src="https://marvelapp.com/108h9abg?emb=1&iosapp=false&frameless=false" width="375" height="667" allowTransparency="true" frameborder="0"></iframe>
 
-			<div class="spacer-sm"></div>	
+			<p class="caption mute">Marvel Prototype</p>
 
-			<div class="work-link"><a class="link link-hover transition" href="smithspace">Read the SmithSpace Case Study <i class="fa fa-angle-right" style="font-size: 18px"></i></a></div>
-			<!-- <div class="icon-row">
-				<a href="https://www.linkedin.com/in/ericlchen" target="_blank" class="icon-linkedin"></a>
-				<a href="mailto:ericfhchen@gmail.com?Subject=Hello!" target="_blank" class="icon-mail"></a>
-				<a href="https://medium.com/@ericlchen" target="_blank" class="icon-medium"></a>	
-			</div>		 -->
+			<div class="spacer-xs"></div>
 
+			<div class="section-title">
+				<p class="mute">Credits</p>
+			</div>
+
+			<div class="spacer-xs"></div>
+
+			<p>Client: <a href="https://www.guestlogix.com/" target="_blank">Guestlogix</a>
+			<br>
+			Agency: <a href="https://www.tribalscale.com/" target="_blank">TribalScale</a></p>
+
+			<p>Eric Chen, Product Design Intern
+			<br>
+			Leo Lee, Product Manager
+			<br> 
+			Johnny Chauvet, Senior Product Designer
+			<br> 
+			Jeffrey Wang, Developer Intern
+			<br> 
+			Edwin Zhang, Senior Developer
+
+			</p>
 
 		</div>
 
@@ -208,19 +176,7 @@
 
 <!-- End Main Content -->
 
-
-<div class="spacer-lg hidden-xs"></div>
-<div class="spacer-sm visible-xs"></div>
-
-<!-- Footer -->
-	<div id="footer">
-		<div class="icon-row">
-			<a href="https://www.linkedin.com/in/ericlchen" target="_blank" class="icon-linkedin"></a>
-			<a href="mailto:ericfhchen@gmail.com?Subject=Hello!" target="_blank" class="icon-mail"></a>
-			<a href="https://medium.com/@ericlchen" target="_blank" class="icon-medium"></a>	
-		</div>	
-	</div>	
-<!-- End Footer -->
+<div class="spacer-sm"></div>
 
 <!-- JQuery & JS -->
 <script type="text/javascript" src="js/jquery-3.1.0.min.js"></script>

@@ -11,10 +11,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
 	<!-- font -->
-	<link href="https://fonts.googleapis.com/css?family=Gothic+A1:200,300,400,500" rel="stylesheet">
-
-	<!-- emoji -->
-	<link href="https://afeld.github.io/emoji-css/emoji.css" rel="stylesheet">
+	<link href="css/font-face.css" rel="stylesheet">
 
 	<!-- custom css -->
 	<link rel="stylesheet" type="text/css" href="css/styles.css">
@@ -23,7 +20,7 @@
 	<link rel="shortcut icon" href="favicon.png">
 
 </head>
-<body>
+<body class="body-article">
 
 <!-- nav desktop -->	
 	<nav id="navbar" class="nav navbar-fixed-top hidden-sm hidden-xs">
@@ -40,6 +37,9 @@
 					<ul class="dropdown-menu">
 						<li><a class="transition" href="smithspace">SmithSPACE</a></li>
 						<li><a class="transition" href="guestlogix">Guestlogix</a></li>
+						<li><a class="transition" href="lucy">LUCY</a></li>
+						<li><a class="transition" href="for">FOR</a></li>
+						<li><a class="transition" href="lw">LOSERS WEEPERS</a></li>
 					</ul>
 				</li>
 				<li role="presentation"><a href="eric-chen-resume.pdf" target="_blank">Resume</a></li>
@@ -62,7 +62,10 @@
 	    <a id="mob-work" class="displayaz">Work</a>
 	    	<ul id="mob-work-dropdown">
 	    		<li><a class="transition" href="smithspace">SmithSPACE</a></li>
-	    		<li><a class="transition" href="guestlogix">Guestlogix</a></li>
+				<li><a class="transition" href="guestlogix">Guestlogix</a></li>
+				<li><a class="transition" href="lucy">LUCY</a></li>
+				<li><a class="transition" href="for">FOR</a></li>
+				<li><a class="transition" href="lw">LOSERS WEEPERS</a></li>
 	    	</ul>
 	    <a class="transition displayaz" href="eric-chen-resume.pdf" target="_blank">Resume</a>
 	  </div>
@@ -76,25 +79,23 @@
 	</span>
 <!-- end nav mobile -->
 
-<div class="spacer-sm"></div>
+<div class="spacer-xs hidden-xs"></div>
+<div class="spacer-xs hidden-xs"></div>
+<div class="spacer-xs hidden-xs"></div>
+<div class="spacer-xs hidden-xs"></div>
+<div class="spacer-xs hidden-xs"></div>
 
 <!-- Main Content (Work) -->
+<div class="hero container" style="background-image: url('img/work-1.png'); background-color: #5b792b;">
+	<div class="section-title">
+		<h1>SmithSPACE</h1>
+		<p class="subheading">Conceptual iOS Room Booking App</p>
+	</div>
+</div>	
+
 <div class="article container">
 	<div class="inner-content">
 		<div>
-			<div class="section-title">
-				<h1>SmithSPACE Reimagined</h1>
-				<p class="mute">A Case Study on the Smith School of Business Room Booking System</p>
-			</div>
-
-			<div class="spacer-sm"></div>
-
-			<iframe id="figma" style="border: none;" width="600" height="600" frameborder="0" src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2FCTFVozf4ZhP95eudsCTmzsnr%2FSmithSpace-Redesign%3Fnode-id%3D336%253A142%26viewport%3D334%252C351%252C0.400789%26scaling%3Dscale-down" allowfullscreen></iframe>
-
-			<p class="caption mute">Figma Prototype (best viewed in full screen)</p>
-
-			<div class="spacer-xs"></div>
-			<div class="spacer-xs"></div>
 			
 			<div class="section-title">
 				<p class="mute">Context</p>
@@ -102,179 +103,58 @@
 
 			<div class="spacer-xs"></div>
 
-			<p class="">As the Director of UI/UX for the Commerce Society Agency at my school, I had the opportunity to redesign the room booking system for Smith School of Business.</p>
-
-			<p class="">This was a pro-bono design project of which I led a team of three designers (including myself) to research, ideate, build, and prototype a mobile experience for SmithSPACE.</p>
+			<p class="">SmithSPACE is the room booking service for students and staff at the Smith School of Business. I was commissioned to lead a pro-bono design project in 2018 for the Commerce Society Agency to design a concept app to replace the current web experience. I worked with two junior designers to conduct research and design a prototype to reimagine the booking process for students.</p>
 
 			<div class="spacer-xs"></div>
 
 			<div class="section-title">
-				<p class="mute">Product Description</p>
+				<p class="mute">Process</p>
 			</div>
 
 			<div class="spacer-xs"></div>
 
-			<p class="">SmithSPACE is the web portal that faculty and students use to book breakout rooms and event space in the school.</p>
-
-			<p>For the purpose of this project and prototype I chose to focus specifically on the flow for students to book breakout rooms. More research will need to be conducted for future iterations of this project to include flows for faculty and event space.</p>
-
-			<img class="article-img" src="img/smithspace/1.png">
-
-			<p class="caption mute">Current SmithSpace Web Portal</p>
+			<p>We conducted interviews with multiple student groups in the school and synthesized our research into a journey map which we used to guide our design. We focused on improving the experience of choosing dates by replacing the current dropdown menu with a calendar modal. We also reimagined the one-page web experience by breaking the overall process into many steps which helped reduce the cognitive load on the user.  </p>
 
 			<div class="spacer-xs"></div>
 
 			<div class="section-title">
-				<p class="mute">Design Process</p>
-			</div>		
-
-			<div class="spacer-xs"></div>
-
-			<p>As a manager and designer, I led my team through various ideation exercises modelled after Google’s Design Sprint framework. Since we are students with conflicting schedules, the Sprint had to be broken up into multiple weeks.</p>
-
-			<div class="section-subtitle">
-				<p class="mute">User Interviews — Week 1</p>
-			</div>		
-
-			<p>We had sessions with 10 students total–7 of them were business students familiar with using the product; 3 of them were from other faculties and had not seen it before.</p>
-
-			<p>The sessions consisted of a brief questionnaire followed by a basic task: booking a room.</p>
-
-			<p>Below is a list of some of the key takeaways from our research.</p>
-
-			<ul>
-				<li>All users found the steps to be disorienting. Many did not know there were hidden form fields that needed to be filled out until clicking through all the different navigations</li>
-				<li>Students who were familiar with the product knew where to click but only because their behaviour was learned over many months and years of booking rooms.</li>
-				<li>Students who were <b>not</b> familiar with the product said they were overwhelmed by the number of options they were shown on one screen, and most of those features did not get used.</li>
-			</ul>
-
-			<div class="spacer-xs"></div>
-
-			<div class="section-subtitle">
-				<p class="mute">Conceptual Design — Week 2</p>
-			</div>			
-
-			<p>Next week, we used our synthesized research to guide the Sprint.</p>
-
-			<div class="spacer-xs"></div>
-
-			<img class="article-img" src="img/smithspace/2.png">
-
-			<p class="caption mute">Whiteboarding user flows and wireframes</p>
-
-			<p class="">The key deliverables for this session were a user journey, a feature map, and a basic user flow. Below is the user journey for the current web portal.</p>
-
-			<img class="article-img" src="img/smithspace/3.png">
-
-			<p class="caption mute">User journey for current SmithSpace web portal</p>
-
-			<p>The journey map was an effective tool for us to figure out which areas needed most improvement. Based on what we drew, we wanted to focus most on making <b>date-picking</b> and <b>entering event details</b> as straightforward as possible for users to ensure they do not get frustrated.</p>
-
-			<div class="section-subtitle">
-				<p class="mute">Design Logic</p>
+				<p class="mute">Video Demo</p>
 			</div>
 
-			<p>It was clear to us that <b>the web platform imposed a cognitive overload</b> on the user, forcing them to make all their decisions simultaneously. With limited screen real estate we decided to <b>utilize a stepped process</b>, which we thought would work better for a complicated task. It breaks up the flow into smaller tasks, allowing the user to focus on one thing at a time.</p>
-			
-			<div class="section-subtitle">
-				<p class="mute">Wireframes — Week 3</p>
-			</div>			
+			<div class="spacer-xs"></div>
+			<div class="spacer-xs"></div>
 
-			<p>I guided my team through a drawing exercise based on Crazy 8’s from the Google Design Sprint. The team had 2 minutes to come up with 2 different wireframe concepts for each step of the user flow.</p>
+			<iframe src="https://player.vimeo.com/video/289591626" width="500" height="500" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
 
-			<p>After reviewing everyone’s concepts, we synthesized and drew some initial wires on the whiteboard for us to recreate in Figma on a later date.</p>
+			<div class="spacer-xs"></div>
+			<div class="spacer-xs"></div>
 
-			<img class="article-img" src="img/smithspace/4.jpg">
+			<div class="section-title">
+				<p class="mute">Prototype</p>
+			</div>
 
-			<p class="caption mute">Whiteboard Wireframes</p>
+			<div class="spacer-xs"></div>
+			<div class="spacer-xs"></div>
 
-			<img class="article-img" src="img/smithspace/5.png">
+			<iframe id="figma" style="border: none;" width="600" height="600" frameborder="0" src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2FCTFVozf4ZhP95eudsCTmzsnr%2FSmithSpace-Redesign%3Fnode-id%3D336%253A142%26viewport%3D334%252C351%252C0.400789%26scaling%3Dscale-down" allowfullscreen></iframe>
 
-			<p class="caption mute">Wireframes created in Figma</p>
-
-			<div class="section-subtitle">
-				<p class="mute">High Fidelity Screens and Prototyping — Weeks 4–12</p>
-			</div>			
-
-			<p>The next few weeks were all about getting the design system set up and teaching my team how to use Figma.</p>
-
-			<img class="article-img" src="img/smithspace/6.png">
-
-			<p class="caption mute">Style Guide</p>
-
-			<p>Week by week, we started to piece together the screens and prototyped the new mobile app on iPhone X.</p>
-
-			<div class="section-subtitle">
-				<p class="mute">Date Picker</p>
-			</div>		
-
-			<p>As per the journey map, it was imperative for us to make the date-picking process a pleasant experience for the user. Currently, the web portal makes users pick the date from a small calendar widget. The “time” fields are also <b>mandatory</b>, forcing people to use the up and down arrows to choose from a 24 Hour Clock.</p>
-
-			<img class="article-img" src="img/smithspace/7.png">
-
-			<p class="caption mute">SmithSPACE Web Date Picker</p>
-
-			<p>In our redesign, we used a large, scrollable calendar widget. We also opted to make the “time” field <b>optional</b>, because our research found that many of our users just wanted to see the available rooms regardless of the time of day. This saved a few clicks and lets the user dive into the room-picking page right away.</p>
-
-			<iframe src="https://player.vimeo.com/video/292762819" width="640" height="358" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
-
-			<p class="caption mute">Date Picker flow with optional time field</p>
+			<p class="caption mute">Figma Prototype (best viewed in full screen)</p>
 
 			<div class="spacer-xs"></div>
 
 			<div class="section-title">
-				<p class="mute">Reflection</p>
-			</div>		
+				<p class="mute">Credits</p>
+			</div>
 
 			<div class="spacer-xs"></div>
 
-			<p>This project resulted in a lot of first-time experiences for me.</p>
+			<p>Client: <a href="https://www.comsocagency.com" target="_blank">Commerce Society Agency</a></p>
 
-			<ul>
-				<li>First time teaching a group in a design management position</li>
-				<li>First time working through an entire design thinking framework</li>
-				<li>First time conducting a user study outside of work</li>
-			</ul>
-
-			<p>Looking back, there were several things I wish I would have asked or done differently in the research phase:</p>
-
-			<ul>
-				<li><b>Conduct research with more subjects</b> — We only had 10 in-person interviews, but we could have generated a lot more responses if we had sent out an online survey for people to easily complete.</li>
-				<li><b>Would people actually download a new app?</b> — Many people will be reluctant to download a new app on their phone even if they said they would; many are content with the web platform due to their learned behaviours.</li>
-				<li><b>Less bias in our research questions</b> — As the design leader my job was to teach the juniors about iOS app design. Naturally, some of our research questions were bias towards mobile because I didn’t want the results to go against that and change the project scope entirely.</li>
-			</ul>
-
-			<p>In the next iteration of the project, we will need to think about how to design other flows in the app and keep them consistent with what we have already.</p>
-
-			<img class="article-img" src="img/smithspace/8.png">
-
-			<p class="caption mute">Instant Booking Button</p>
-
-			<div class="section-subtitle">
-				<p class="mute">Instant Booking</p>
-			</div>
-
-			<p>In our research we found that some students simply wanted a quiet place to study immediately, whether it be after class or if they were in a particular building already, so we wanted to eventually create a feature which lists all the rooms that are currently available to use.</p>
-
-			<div class="section-subtitle">
-				<p class="mute">Faculty + Event Space</p>
-			</div>
-
-			<p>We also needed to conduct proper research to learn how to design for faculty, and how to improve the booking process for event spaces.</p>
-
-			<p><b>Please refer to the widget at the top of this article to play around with the Figma prototype.</b></p>
-
-			<p>Thanks for reading!</p>
-
-			<div class="spacer-sm"></div>	
-
-			<div class="work-link"><a class="link link-hover transition" href="guestlogix">Read the Guestlogix Case Study <i class="fa fa-angle-right" style="font-size: 18px"></i></a></div>
-			<!-- <div class="icon-row">
-				<a href="https://www.linkedin.com/in/ericlchen" target="_blank" class="icon-linkedin"></a>
-				<a href="mailto:ericfhchen@gmail.com?Subject=Hello!" target="_blank" class="icon-mail"></a>
-				<a href="https://medium.com/@ericlchen" target="_blank" class="icon-medium"></a>	
-			</div>		 -->
-
+			<p>Eric Chen, Lead Designer
+			<br>
+			Cathy Du, Junior Designer 
+			<br> 
+			Michael Hanna, Junior Designer</p>
 
 		</div>
 
@@ -284,19 +164,7 @@
 
 <!-- End Main Content -->
 
-
-<div class="spacer-lg hidden-xs"></div>
-<div class="spacer-sm visible-xs"></div>
-
-<!-- Footer -->
-	<div id="footer">
-		<div class="icon-row">
-			<a href="https://www.linkedin.com/in/ericlchen" target="_blank" class="icon-linkedin"></a>
-			<a href="mailto:ericfhchen@gmail.com?Subject=Hello!" target="_blank" class="icon-mail"></a>
-			<a href="https://medium.com/@ericlchen" target="_blank" class="icon-medium"></a>	
-		</div>	
-	</div>	
-<!-- End Footer -->
+<div class="spacer-sm"></div>
 
 <!-- JQuery & JS -->
 <script type="text/javascript" src="js/jquery-3.1.0.min.js"></script>

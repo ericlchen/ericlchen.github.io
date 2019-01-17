@@ -1,0 +1,24 @@
+/*Body Light*/
+@font-face {
+	font-family: 'body-light-ext';
+	src: url(../fonts/body-light-ext.woff);
+}
+
+/*Body Regular*/
+@font-face {
+	font-family: 'body-regular';
+	src: url(../fonts/body-regular.woff);
+}
+
+/*Body Medium*/
+@font-face {
+	font-family: 'body-regular-ext';
+	src: url(../fonts/body-regular-ext.woff);
+}
+
+
+/*Body Bold*/
+@font-face {
+	font-family: 'body-bold-ext';
+	src: url(../fonts/body-bold-ext.woff);
+}

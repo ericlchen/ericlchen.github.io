@@ -11,10 +11,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
 	<!-- font -->
-	<link href="https://fonts.googleapis.com/css?family=Gothic+A1:200,300,400,500" rel="stylesheet">
-
-	<!-- emoji -->
-	<link href="https://afeld.github.io/emoji-css/emoji.css" rel="stylesheet">
+	<link href="css/font-face.css" rel="stylesheet">
 
 	<!-- custom css -->
 	<link rel="stylesheet" type="text/css" href="css/styles.css">
@@ -40,6 +37,9 @@
 					<ul class="dropdown-menu">
 						<li><a class="transition" href="smithspace">SmithSPACE</a></li>
 						<li><a class="transition" href="guestlogix">Guestlogix</a></li>
+						<li><a class="transition" href="lucy">LUCY</a></li>
+						<li><a class="transition" href="for">FOR</a></li>
+						<li><a class="transition" href="lw">LOSERS WEEPERS</a></li>
 					</ul>
 				</li>
 				<li role="presentation"><a href="eric-chen-resume.pdf" target="_blank">Resume</a></li>
@@ -55,16 +55,19 @@
 	  <!-- Button to close the overlay navigation -->
 	  <a href="javascript:void(0)" class="closebtn displayaz" onclick="closeNav()">&times;</a>
 
-	  <!-- Overlay content -->
+	<!-- Overlay content -->
 	  <div class="overlay-content">
-	    <a class="transition displayaz" href="/">Home</a>
+	    <a class="transition displayaz" href="">Home</a>
 	    <a class="transition displayaz" href="about">About</a>
 	    <a id="mob-work" class="displayaz">Work</a>
 	    	<ul id="mob-work-dropdown">
 	    		<li><a class="transition" href="smithspace">SmithSPACE</a></li>
-	    		<li><a class="transition" href="guestlogix">Guestlogix</a></li>
+				<li><a class="transition" href="guestlogix">Guestlogix</a></li>
+				<li><a class="transition" href="lucy">LUCY</a></li>
+				<li><a class="transition" href="for">FOR</a></li>
+				<li><a class="transition" href="lw">LOSERS WEEPERS</a></li>
 	    	</ul>
-	    <a class="displayaz" href="eric-chen-resume.pdf" target="_blank">Resume</a>
+	    <a class="transition displayaz" href="eric-chen-resume.pdf" target="_blank">Resume</a>
 	  </div>
 
 	</div>
@@ -77,26 +80,15 @@
 <!-- end nav mobile -->
 
 <!-- Hero Desktop -->
-		<div class="bgHero"></div>
 		<div class="hero container">
 
 			<div class="inner-content">
 				<div>
 					<h1>Eric Chen</h1>
-					<p class="mute">Previously Product Design Intern at TribalScale</p>
 					<div class="spacer-xs"></div>
-					<p>Self-taught designer and student from Smith School of Business at Queen’s University.</p>
+					<p>Junior designer with a business background combining both disciplines to create digital experiences and visual identities. Looking for new grad roles in fashion, music, publishing, or e-commerce.</p>
 					<div class="spacer-xs"></div>
-					<p>Passionate about crafting beautiful user experiences, solving complex problems and making art.</p>
-					<div class="spacer-xs"></div>
-					<p>Currently looking for new grad roles.</p>
-					<div class="spacer-xs"></div>
-					<div class="spacer-xs"></div>
-					<div class="icon-row">
-						<a href="https://www.linkedin.com/in/ericlchen" target="_blank" class="icon-linkedin transition"></a>
-						<a href="mailto:ericfhchen@gmail.com?Subject=Hello!" target="_blank" class="icon-mail transition"></a>
-						<a href="https://medium.com/@ericlchen" target="_blank" class="icon-medium transition"></a>	
-					</div>		
+					<div class="spacer-xs"></div>		
 				</div>
 			</div>
 
@@ -104,63 +96,165 @@
 
 <!-- End Hero -->
 
-<div class="spacer-sm"></div>
-
 <!-- Main Content (Work) -->
-<div id="work" class="container">
+<div class="bgContainer">
 
-	<div class="section-title">
-		<h1>Work</h1>
+	<div id="work" class="container">
+							
+		<div class="spacer-sm"></div>		
+
+		<!-- DESKTOP -->
+		<div id="work-1" class="work hidden-xs">
+			<a class="transition" href="smithspace"><img class="work-img" src="img/work-1-home.png"></a>
+			<div class="work-desc">
+				<p class="work-desc-title">SmithSPACE</p>
+				<p class="mute">Room Booking App</p>
+			</div>
+		</div>
+
+		<div id="work-2" class="work hidden-xs">
+			<a class="transition" href="guestlogix"><img class="work-img" src="img/work-2-home.png"></a>
+			<div class="work-desc">
+				<p class="work-desc-title">Guestlogix</p>
+				<p class="mute">In-Flight Merchandise Ordering App</p>
+			</div>
+		</div>
+
+		<div class="spacer-xl hidden-xs"></div>
+
+		<div id="work-3" class="work hidden-xs">
+			<a class="transition" href="lucy"><img class="work-img" src="img/work-3-home.png"></a>
+			<div class="work-desc">
+				<p class="work-desc-title">LUCY</p>
+				<p class="mute">AR Interior Design App</p>
+			</div>
+		</div>
+
+		<div id="work-4" class="work hidden-xs">
+			<a class="transition" href="for"><img class="work-img" src="img/work-4-home.png"></a>
+			<div class="work-desc">
+				<p class="work-desc-title">FOR</p>
+				<p class="mute">Various Graphics and Billboard Designs</p>
+			</div>
+		</div>
+
+		<div class="spacer-xl hidden-xs"></div>
+
+		<div id="work-5" class="work hidden-xs">
+			<a class="transition" href="lw"><img class="work-img" src="img/work-5-home.png"></a>
+			<div class="work-desc">
+				<p class="work-desc-title">Losers Weepers Vintage</p>
+				<p class="mute">Identity and Merchandise Design</p>
+			</div>
+		</div>
+
+		<div id="work-6" class="work hidden-xs">
+			<a class="transition" href="oligarchy"><img class="work-img" src="img/work-6-home.jpg"></a>
+			<div class="work-desc">
+				<p class="work-desc-title">OLIGARCHY</p>
+				<p class="mute">Visual Thesis</p>
+			</div>
+		</div>
+		<!-- END DESKTOP -->
+		
+		<div class="spacer-sm hidden-xs"></div>
+
+		<!-- MOBILE -->
+		<div id="work-1-mob" class="work visible-xs">
+			<a class="transition" href="smithspace"><img class="work-img" src="img/work-1.png"></a>
+			<div class="work-desc">
+				<p class="work-desc-title">SmithSPACE</p>
+				<p class="mute">Conceptual iOS Room Booking App</p>
+			</div>
+		</div>	
+
+		<div class="spacer-xs hidden-md hidden-lg"></div>
+		<div class="spacer-xs hidden-md hidden-lg"></div>
+		<div class="spacer-xs hidden-md hidden-lg"></div>
+		<div class="spacer-xs hidden-md hidden-lg"></div>
+		<div class="spacer-xs hidden-md hidden-lg"></div>
+
+		<div id="work-2-mob" class="work visible-xs">
+			<a class="transition" href="guestlogix"><img class="work-img" src="img/work-2.png"></a>
+			<div class="work-desc">
+				<p class="work-desc-title">Guestlogix</p>
+				<p class="mute">iOS Prototype for Guestlogix</p>
+			</div>
+		</div>
+
+		<div class="spacer-xs hidden-md hidden-lg"></div>
+		<div class="spacer-xs hidden-md hidden-lg"></div>
+		<div class="spacer-xs hidden-md hidden-lg"></div>
+		<div class="spacer-xs hidden-md hidden-lg"></div>
+		<div class="spacer-xs hidden-md hidden-lg"></div>
+
+		<div id="work-3-mob" class="work visible-xs">
+			<a class="transition" href="lucy"><img class="work-img" src="img/work-3.png"></a>
+			<div class="work-desc">
+				<p class="work-desc-title">LUCY</p>
+				<p class="mute">iOS Prototype for Guestlogix</p>
+			</div>
+		</div>
+
+		<div class="spacer-xs hidden-md hidden-lg"></div>
+		<div class="spacer-xs hidden-md hidden-lg"></div>
+		<div class="spacer-xs hidden-md hidden-lg"></div>
+		<div class="spacer-xs hidden-md hidden-lg"></div>
+		<div class="spacer-xs hidden-md hidden-lg"></div>
+
+		<div id="work-4-mob" class="work visible-xs">
+			<a class="transition" href="for"><img class="work-img" src="img/work-4.png"></a>
+			<div class="work-desc">
+				<p class="work-desc-title">FOR</p>
+				<p class="mute">Various Graphics and Billboard Designs</p>
+			</div>
+		</div>
+
+		<div class="spacer-xs hidden-md hidden-lg"></div>
+		<div class="spacer-xs hidden-md hidden-lg"></div>
+		<div class="spacer-xs hidden-md hidden-lg"></div>
+		<div class="spacer-xs hidden-md hidden-lg"></div>
+		<div class="spacer-xs hidden-md hidden-lg"></div>
+
+		<div id="work-5-mob" class="work visible-xs">
+			<a class="transition" href="lw"><img class="work-img" src="img/work-5.png"></a>
+			<div class="work-desc">
+				<p class="work-desc-title">Losers Weepers Vintage</p>
+				<p class="mute">Identity and Merchandise Design</p>
+			</div>
+		</div>
+
+		<div class="spacer-xs hidden-md hidden-lg"></div>
+		<div class="spacer-xs hidden-md hidden-lg"></div>
+		<div class="spacer-xs hidden-md hidden-lg"></div>
+		<div class="spacer-xs hidden-md hidden-lg"></div>
+		<div class="spacer-xs hidden-md hidden-lg"></div>
+
+		<div id="work-6-mob" class="work visible-xs">
+			<a class="transition" href="oligarchy"><img class="work-img" src="img/work-6.png"></a>
+			<div class="work-desc">
+				<p class="work-desc-title">OLIGARCHY</p>
+				<p class="mute">Visual Thesis</p>
+			</div>
+		</div>
+		<!-- END MOBILE -->	
 	</div>
 
-<div class="spacer-sm"></div>
-
-	<div id="work-1" class="work">
-		<img class="work-img" src="img/work-1.png">
-		<div class="work-desc">
-			<h2>SmithSpace Mobile</h2>
-			<p class="tags">Side Project • Research • UX • UI • Prototyping</p>
-			<p class="mute">Reimagined the web room booking system at Smith School of Business as a mobile experience.</p>
-			<div class="work-link"><a class="link link-hover" href="smithspace">Read the case study</a></div>
-		</div>
-	</div>
-	
-<div class="spacer-md hidden-xs"></div>
-<div class="spacer-sm visible-xs"></div>
-	
-	<div id="work-2-desk" class="work hidden-xs">
-		<div class="work-desc">
-			<h2>Guestlogix iOS App</h2>
-			<p class="tags">Client Project • UX • UI • Prototyping</p>
-			<p class="mute">Designed user flows and high fidelity screens for in-flight retail experience.</p>
-			<div class="work-link"><a class="link link-hover transition" href="guestlogix">Read the case study</a></div>
-		</div>
-		<img class="work-img" src="img/work-2.png">
-	</div>	
-
-	<div id="work-2-mob" class="work visible-xs">
-		<img class="work-img" src="img/work-2.png">
-		<div class="work-desc">
-			<h2>Guestlogix iOS App</h2>
-			<p class="tags">Client Project • UX • UI • Prototyping</p>
-			<p class="mute">Designed user flows and high fidelity screens for in-flight retail experience.</p>
-			<div class="work-link"><a class="link link-hover transition" href="guestlogix">Read the case study</a></div>
-		</div>
-	</div>	
 </div>
+
 <!-- End Main Content (Work) -->
 
-<div class="spacer-lg hidden-xs"></div>
+<!-- <div class="spacer-lg hidden-xs"></div> -->
 <div class="spacer-sm visible-xs"></div>
 
 <!-- Footer -->
-	<div id="footer">
+<!-- 	<div id="footer">
 		<div class="icon-row">
 			<a href="https://www.linkedin.com/in/ericlchen" target="_blank" class="icon-linkedin"></a>
 			<a href="mailto:ericfhchen@gmail.com?Subject=Hello!" target="_blank" class="icon-mail"></a>
 			<a href="https://medium.com/@ericlchen" target="_blank" class="icon-medium"></a>	
 		</div>	
-	</div>	
+	</div>	 -->
 <!-- End Footer -->
 
 <!-- JQuery & JS -->

@@ -11,7 +11,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
 	<!-- font -->
-	<link href="https://fonts.googleapis.com/css?family=Gothic+A1:200,300,400,500" rel="stylesheet">
+	<link href="css/font-face.css" rel="stylesheet">
 
 	<!-- emoji -->
 	<link href="https://afeld.github.io/emoji-css/emoji.css" rel="stylesheet">
@@ -21,6 +21,8 @@
 
 	<!-- favicon -->
 	<link rel="shortcut icon" href="favicon.png">
+
+	<style type="text/css">body{background-color: #ffffff}</style>
 
 </head>
 <body>
@@ -35,14 +37,8 @@
 		        <a class="nav-link transition" href="about.html">About</a>
 		    </li> -->
 			<ul class="nav navbar-nav navbar-right">
-				<li role="presentation"><a class="transition" href="about">About</a></li>
-				<li class="dropdown" role="presentation"><a data-toggle="dropdown" class="transition dropdown-toggle" href="#work">Work <b class="caret"></b></a>
-					<ul class="dropdown-menu">
-						<li><a class="transition" href="smithspace">SmithSPACE</a></li>
-						<li><a class="transition" href="guestlogix">Guestlogix</a></li>
-					</ul>
-				</li>
-				<li role="presentation"><a href="eric-chen-resume.pdf" target="_blank">Resume</a></li>
+				<li role="presentation"><a class="active transition" href="about">About</a></li>
+				<li role="presentation"><a href="eric-chen-resume.pdf" target="_blank">CV</a></li>
 			</ul>
 		</div>
 	</nav>
@@ -57,14 +53,9 @@
 
 	  <!-- Overlay content -->
 	  <div class="overlay-content">
-	    <a class="transition displayaz" href="/">Home</a>
+	    <a class="transition displayaz" href="/">Work</a>
 	    <a class="transition displayaz" href="about">About</a>
-	    <a id="mob-work" class="displayaz">Work</a>
-	    	<ul id="mob-work-dropdown">
-	    		<li><a class="transition" href="smithspace">SmithSPACE</a></li>
-	    		<li><a class="transition" href="guestlogix">Guestlogix</a></li>
-	    	</ul>
-	    <a class="transition displayaz" href="eric-chen-resume.pdf" target="_blank">Resume</a>
+	    <a class="displayaz" href="eric-chen-resume.pdf" target="_blank">Resume</a>
 	  </div>
 
 	</div>
@@ -78,21 +69,22 @@
 
 <!-- Main Content (About) -->
 <div class="spacer-sm visible-xs"></div>		
-<div class="spacer-sm hidden-xs"></div>
+<div class="spacer-md hidden-xs"></div>
 		<div class="about container">
 				<div class="inner-content">
 					<div>
 						<div class="section-title">
-							<h1>Hey, I'm Eric.</h1>
+							<h1>There is nothing I enjoy more than creating things.</h1>
 						</div>
-						<p class="mute">There is nothing I enjoy more in life than creating things.</p>
-						<p class="mute">In high school, I ran a youth entrepreneurship conference, which sparked my interest in the tech and startup space. I had dreams of working for and eventually building my own startup. But after I started business school, I quickly realized none of the traditional career paths fit me. I knew I had an innate affinity for design, so I taught myself the basics of UI + UX and started seeking out work.</p>
+						<p class="mute">I am a self-taught designer and student from Smith School of Business at Queen<span style="font-family: sans-serif;">’</span>s University.</p>
+						<p class="mute">I once had dreams of working for and eventually building my own startup. But after I started business school, I quickly realized none of the traditional career paths fit me. I knew I had an innate affinity for design, so I taught myself the basics of UI/UX and started seeking out work.</p>
 						<p class="mute">After three years, I have accumulated experience designing for startups and other larger clients such as <b>CIBC</b>, <b>Radio.com</b>, <b>Guestlogix</b>, and <b>Guardian Analytics</b>.</p>
 						<p class="mute">In my spare time I always try to keep myself creatively stimulated. I practice film photography and use my photos to design clothes, magazines, album cover art, and posters.</p>
-						<p class="mute">I’m currently looking for full-time work once I graduate in April 2019.</p>
+						<!-- <p class="mute">I am currently looking for full-time work once I graduate in April 2019.</p> -->
+						<p class="mute">I am currently looking for full-time work once I graduate in April 2019.</p>
 						
 
-						<div class="work-link"><a class="link link-hover" href="https://medium.com/@ericlchen" target="_blank">Read more on Medium</a></div>
+						<!-- <a class="link link-hover" href="https://medium.com/@ericlchen" target="_blank">Read more of my writing on Medium </a> -->
 						<!-- <div class="icon-row">
 							<a href="https://www.linkedin.com/in/ericlchen" target="_blank" class="icon-linkedin"></a>
 							<a href="mailto:ericfhchen@gmail.com?Subject=Hello!" target="_blank" class="icon-mail"></a>
