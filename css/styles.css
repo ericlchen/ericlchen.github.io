@@ -118,7 +118,7 @@ b {
 }
 
 .mute {
-    opacity: 0.6 !important;
+    opacity: 0.7 !important;
 }
 
 .tags {
@@ -231,7 +231,7 @@ a:hover {
 }
 
 a.navbar-brand {
-    opacity: 1;
+    opacity: 1 ;
 }
 
 .active {
