@@ -1,0 +1,51 @@
+.hero.container {
+	background-size: 15% !important;
+}
+
+.body-article {
+	color: #fff;
+	background-color: #0a0b06;
+}
+
+video {
+	max-width: 100%;
+}
+
+.article a {
+	color: #fff;
+	opacity: 0.5;
+}
+
+.article p {
+/*	font-family: 'Libre Baskerville', serif;*/
+	font-size: 14px;
+	line-height: 22px;
+}
+
+.article .quote {
+	font-family: 'Libre Baskerville', serif;
+	font-style: italic;
+	font-size: 24px;
+	line-height: 32px;
+	margin-bottom: 36px;
+	text-align: center;
+}
+
+.section-title p {
+	font-family: body-bold-ext, Roboto, sans-serif;
+	font-size: 18px;
+}
+
+.section-subtitle p {
+	font-family: body-bold-ext, Roboto, sans-serif;
+	font-size: 13px;
+	margin-bottom: 0 !important;
+}
+
+
+@media screen and (max-width: 768px) {
+	.hero.container {
+		background-size: 40% !important;
+	}
+
+}
