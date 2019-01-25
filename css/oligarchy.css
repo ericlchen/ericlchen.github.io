@@ -11,6 +11,10 @@ video {
 	max-width: 100%;
 }
 
+.article img {
+	max-width: 100%;
+}
+
 .article a {
 	color: #fff;
 	opacity: 0.5;
