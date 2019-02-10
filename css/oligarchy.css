@@ -53,3 +53,9 @@ video {
 	}
 
 }
+
+/*Radio CSS*/
+p.tracklist {
+	font-size: 12px;
+	line-height: 18px;
+}
