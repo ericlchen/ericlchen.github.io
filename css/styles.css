@@ -117,6 +117,11 @@ b {
     font-weight: 700;
 }
 
+ul {
+    padding-inline-start: 0;
+    list-style: none;
+}
+
 .mute {
     opacity: 0.7 !important;
 }
@@ -289,7 +294,7 @@ a.navbar-brand {
 
 .inner-content {
     height: 100%;
-    max-width: 75%;
+    max-width: 60%;
     display: flex;
     align-items: center;
     align-content: center;
