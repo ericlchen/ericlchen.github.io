@@ -3,6 +3,16 @@
 <head>
 	<title>About – Eric Chen</title>
 
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-134609358-1"></script>
+	<script>
+	  window.dataLayer = window.dataLayer || [];
+	  function gtag(){dataLayer.push(arguments);}
+	  gtag('js', new Date());
+
+	  gtag('config', 'UA-134609358-1');
+	</script>
+	
 	<!-- css -->
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
 	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
@@ -31,14 +41,24 @@
 	<nav id="navbar" class="nav navbar-fixed-top hidden-sm hidden-xs">
 		<div class="container">
 			<div class="navbar-header">
-				<a class="navbar-brand transition" href="/">Eric Chen</a>
+				<a class="navbar-brand transition" href="/"><img src="brand.png"></a>
 			</div>
 			<!-- <li class="nav-item">
 		        <a class="nav-link transition" href="about.html">About</a>
 		    </li> -->
 			<ul class="nav navbar-nav navbar-right">
-				<li role="presentation"><a class="active transition" href="about">About</a></li>
-				<li role="presentation"><a href="eric-chen-resume.pdf" target="_blank">CV</a></li>
+				<li role="presentation"><a class="transition" href="about">About</a></li>
+				<li class="dropdown" role="presentation"><a data-toggle="dropdown" class="transition dropdown-toggle" href="#work">Work <b class="caret"></b></a>
+					<ul class="dropdown-menu">
+						<li><a class="transition" href="smithspace">SmithSPACE</a></li>
+						<li><a class="transition" href="guestlogix">Guestlogix</a></li>
+						<li><a class="transition" href="lucy">LUCY</a></li>
+						<li><a class="transition" href="for">FOR</a></li>
+						<li><a class="transition" href="lw">LOSERS WEEPERS</a></li>
+						<li><a class="transition" href="oligarchy-thesis">OLIGARCHY</a></li>
+					</ul>
+				</li>
+				<li role="presentation"><a href="eric-chen-resume.pdf" target="_blank">Resume</a></li>
 			</ul>
 		</div>
 	</nav>
@@ -51,11 +71,20 @@
 	  <!-- Button to close the overlay navigation -->
 	  <a href="javascript:void(0)" class="closebtn displayaz" onclick="closeNav()">&times;</a>
 
-	  <!-- Overlay content -->
+	<!-- Overlay content -->
 	  <div class="overlay-content">
-	    <a class="transition displayaz" href="/">Work</a>
+	    <a class="transition displayaz" href="/">Home</a>
 	    <a class="transition displayaz" href="about">About</a>
-	    <a class="displayaz" href="eric-chen-resume.pdf" target="_blank">Resume</a>
+	    <a id="mob-work" class="displayaz">Work</a>
+	    	<ul id="mob-work-dropdown">
+	    		<li><a class="transition" href="smithspace">SmithSPACE</a></li>
+				<li><a class="transition" href="guestlogix">Guestlogix</a></li>
+				<li><a class="transition" href="lucy">LUCY</a></li>
+				<li><a class="transition" href="for">FOR</a></li>
+				<li><a class="transition" href="lw">LOSERS WEEPERS</a></li>
+				<li><a class="transition" href="oligarchy-thesis">OLIGARCHY</a></li>
+	    	</ul>
+	    <a class="transition displayaz" href="eric-chen-resume.pdf" target="_blank">Resume</a>
 	  </div>
 
 	</div>
@@ -72,30 +101,44 @@
 <div class="spacer-md hidden-xs"></div>
 		<div class="about container">
 				<div class="inner-content">
-					<div>
+					<div><!-- 
 						<div class="section-title">
-							<h1>There is nothing I enjoy more than creating things.</h1>
-						</div>
-						<p class="mute">I am a self-taught designer and student from Smith School of Business at Queen<span style="font-family: sans-serif;">’</span>s University.</p>
-						<p class="mute">I once had dreams of working for and eventually building my own startup. But after I started business school, I quickly realized none of the traditional career paths fit me. I knew I had an innate affinity for design, so I taught myself the basics of UI/UX and started seeking out work.</p>
-						<p class="mute">After three years, I have accumulated experience designing for startups and other larger clients such as <b>CIBC</b>, <b>Radio.com</b>, <b>Guestlogix</b>, and <b>Guardian Analytics</b>.</p>
-						<p class="mute">In my spare time I always try to keep myself creatively stimulated. I practice film photography and use my photos to design clothes, magazines, album cover art, and posters.</p>
-						<!-- <p class="mute">I am currently looking for full-time work once I graduate in April 2019.</p> -->
-						<p class="mute">I am currently looking for full-time work once I graduate in April 2019.</p>
-						
+							<h1>I should have went to design school.</h1>
+						</div> -->
+						<p class="mute">I studied at the Smith School of Business at Queen<span style="font-family: sans-serif;">’</span>s University while exploring design and art on my own time. Through my internships in product design, I have 3 years of experience designing for startups and corporate clients in an agency environment. 
 
-						<!-- <a class="link link-hover" href="https://medium.com/@ericlchen" target="_blank">Read more of my writing on Medium </a> -->
-						<!-- <div class="icon-row">
-							<a href="https://www.linkedin.com/in/ericlchen" target="_blank" class="icon-linkedin"></a>
-							<a href="mailto:ericfhchen@gmail.com?Subject=Hello!" target="_blank" class="icon-mail"></a>
-							<a href="https://medium.com/@ericlchen" target="_blank" class="icon-medium"></a>	
-						</div>		 -->
+						<p class="mute">I’m currently freelancing for clients in creative industries such as fashion, music, and publishing.</p>
+						
+						<div class="spacer-xs"></div>
+						<div class="spacer-xs"></div>
+						<div class="spacer-xs"></div>
+						
+						<p class="mute">Select Clientele:</p>
+						<ul>
+							<li class="mute"><a href="https://www.cibc.com" target="_blank">CIBC</a></li>
+							<li class="mute"><b><a href="https://www.guestlogix.com/" target="_blank">Guestlogix</a></b></li>
+							<li class="mute"><b><a href="https://guardiananalytics.com/" target="_blank">Guardian Analytics</a></b></li>
+							<li class="mute"><b><a href="http://losersweepersvintage.com" target="_blank">Losers Weepers Vintage</a></b></li>
+							<li class="mute"><b><a href="http://www.muse-magazine.com" target="_blank">MUSE Magazine</a></b></li>
+						</ul>
+						<div class="spacer-xs"></div>
+						<div class="spacer-xs"></div>
+						<div class="spacer-xs"></div>
+
+						<p class="mute">Connect</p>
+						
+						<ul>
+							<li class="mute"><a href="https://www.linkedin.com/in/ericlchen" target="_blank">www.linkedin.com/in/ericlchen</a></li>
+							<li class="mute"><a href="mailto:ericfhchen@gmail.com">ericfhchen@gmail.com</a></li>
+						</ul>
+		
+						
+						
 
 
 					</div>
 
 				</div>
-			<div class="bgHero"></div>
 		</div>
 
 
@@ -108,11 +151,7 @@
 
 <!-- Footer -->
 <div id="footer">
-	<div class="icon-row">
-		<a href="https://www.linkedin.com/in/ericlchen" target="_blank" class="icon-linkedin"></a>
-		<a href="mailto:ericfhchen@gmail.com?Subject=Hello!" target="_blank" class="icon-mail"></a>
-		<a href="https://medium.com/@ericlchen" target="_blank" class="icon-medium"></a>	
-	</div>	
+
 </div>	
 <!-- End Footer -->
 
